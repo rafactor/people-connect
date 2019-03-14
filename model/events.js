@@ -12,6 +12,7 @@ const eventsSchema = new Schema({
     postalCode: {type: String, required: true},  
     email: { type: String, required: true},
     phone: { type: String, required: true},
+    accept: Boolean
    },
   provider: { 
     firstName: { type: String, required: true },
@@ -23,6 +24,7 @@ const eventsSchema = new Schema({
     postalCode: {type: String, required: true},  
     email: { type: String, required: true},
     phone: { type: String, required: true},
+    accept: Boolean
    },
   serviceRequest: String,
   language: [String],  
