@@ -3,27 +3,11 @@ const Schema = mongoose.Schema;
 
 const eventsSchema = new Schema({
   client: { 
-    firstName: { type: String, required: true },
-    lastName: { type: String, required: true },
-    address1: { type: String, required: true},
-    address2: {type: String},
-    city: {type: String, required: true},
-    provice: {type: String, required: true},
-    postalCode: {type: String, required: true},  
-    email: { type: String, required: true},
-    phone: { type: String, required: true},
+    info: {type: Schema.Types.ObjectId, ref: "client"},
     accept: Boolean
    },
   provider: { 
-    firstName: { type: String, required: true },
-    lastName: { type: String, required: true },
-    address1: { type: String, required: true},
-    address2: {type: String},
-    city: {type: String, required: true},
-    provice: {type: String, required: true},
-    postalCode: {type: String, required: true},  
-    email: { type: String, required: true},
-    phone: { type: String, required: true},
+    info: {type: Schema.Types.ObjectId, ref: "client"},
     accept: Boolean
    },
   serviceRequest: String,
@@ -37,3 +21,4 @@ const eventsSchema = new Schema({
 const Events = mongoose.model("Events", eventsSchema);
 
 module.exports = Events;
+ 

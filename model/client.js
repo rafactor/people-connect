@@ -13,11 +13,6 @@ const clientSchema = new Schema({
   phone: { type: String, required: true},
   language: [ String ], 
   password: { type: String, required: true}, 
-  creditCard: { 
-    cardName: {type: String, required: true },
-    cardNumber: {type: Number, required: true},
-    cardExpiryDate: {type: String, required: true}
-    },
   serviceProvier: Boolean,
   servicesProvided: [ String ],
   servicesCoverage: [ String ],
