@@ -3,13 +3,20 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 import common_en from "./translations/en/common"
 import common_pt from "./translations/pt/common"
-
+import common_ar from "./translations/ar/common"
+import common_uk from "./translations/uk/common"
 const resources = {
   en: {
     common: common_en
   },
   pt: {
     common: common_pt
+  },
+  ar: {
+    common: common_ar
+  },
+  uk: {
+    common: common_uk
   }
 };
 

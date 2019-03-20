@@ -1,10 +1,9 @@
 import React, { Component, Suspense } from "react";
-// import Home from "./home";
 import { useTranslation, withTranslation, Trans } from "react-i18next";
+import "./home.scss"
 
 
-
-class Landing extends Component {
+class Language extends Component {
 
     state = {
         languageOptions: [
@@ -30,20 +29,13 @@ class Landing extends Component {
 
         return(
             <div>
-                        <LanguageSelector state={this.state}/>
-
-                    <div className="home-container__title h1">
-                {t("Title")}
-                <div className="home-container__subtitle h5">
-                {t("Subtitle")}
-                </div>
-                </div>
+                <LanguageSelector state={this.state}/>   
             </div>
         )
     }
 }
 
-const Welcome = withTranslation()(Landing);
+const Welcome = withTranslation()(Language);
 
 
 function LanguageSelector(props) {
@@ -54,13 +46,13 @@ function LanguageSelector(props) {
     };
 
     return(
-        <form>
-          <div className="form-group row">
-            <div className="col-5">
+        <div>
+          <div className="language-selector row form-group">
+            <div className="col-3 language-select__label">
               <label htmlFor="language-select">{t("language")}</label>
             </div>
-            <div className="col-6">
-              <select className="form-control" 
+            <div className="col">
+              <select className="language-selector__select" 
                       name= "selectedLanguage"
                       id="language-select"
                     //   value=""
@@ -74,15 +66,25 @@ function LanguageSelector(props) {
               </select>
             </div>
           </div>
-        </form>
+        </div>
     )
 }
 // Component using the Trans component
-function MyComponent() {
+function AppName() {
+  const { t, i18n } = useTranslation();
+
     return (
-      <Trans i18nKey="Subtitle">
-            Find a service provider who speaks <strong>your language</strong>
-      </Trans>
+      <div>
+      <div className="home-container__title h1">
+        {t("Title")}
+        <div className="home-container__subtitle h5">
+          <Trans i18nKey="Subtitle">
+            Find a service provider who speaks{" "}
+            <strong>your language</strong>
+          </Trans>
+        </div>
+      </div>
+      </div>
     );
   }
 
@@ -95,9 +97,9 @@ function Page() {
     };
   
     return (
-        <div>
-          <Welcome />
-          <MyComponent />
+        <div className="home-container">
+          <Language />
+          <AppName />
       </div>
     );
   }
