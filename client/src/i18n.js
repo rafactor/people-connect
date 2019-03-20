@@ -1,35 +1,30 @@
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
+import common_en from "./translations/en/common"
+import common_pt from "./translations/pt/common"
+
+const resources = {
+  en: {
+    common: common_en
+  },
+  pt: {
+    common: common_pt
+  }
+};
 
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    // we init with resources
-    resources: {
-      en: {
-        translations: {
-          "Title": "People Connect",
-          "Subtitle":"Find a service provider who speaks your mother language",
-          "language": "language",
-          appName: "People Connect"
-        }
-      },
-      pt: {
-        translations: {
-          "Title": "People Connect",
-          "Subtitle":"Encontro um prestador de serviços que fala a sua língua",       
-          "language": "idioma",
-         }
-      }
-    },
+
+    resources,
     fallbackLng: "en",
     debug: true,
 
     // have a common namespace used around the full app
-    ns: ["translations"],
-    defaultNS: "translations",
+    ns: ["common"],
+    defaultNS: "common",
 
     keySeparator: false, // we use content as keys
 
