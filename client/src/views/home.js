@@ -10,7 +10,7 @@ class Language extends Component {
             {key: 'en', language: 'english', orientation: 'left'},
             {key: 'ar', language: 'عربى', orientation: 'right'},
             {key: 'pt', language: 'português', orientation: 'left'},
-            {key: 'uk', language: 'yкраїнська', orientation: 'right'},
+            {key: 'ua', language: 'yкраїнська', orientation: 'right'},
         ],
         selectedLanguage: "en"
     }

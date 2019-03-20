@@ -4,7 +4,7 @@ import { initReactI18next } from "react-i18next";
 import common_en from "./translations/en/common"
 import common_pt from "./translations/pt/common"
 import common_ar from "./translations/ar/common"
-import common_uk from "./translations/uk/common"
+import common_ua from "./translations/ua/common"
 const resources = {
   en: {
     common: common_en
@@ -15,8 +15,8 @@ const resources = {
   ar: {
     common: common_ar
   },
-  uk: {
-    common: common_uk
+  ua: {
+    common: common_ua
   }
 };
 
