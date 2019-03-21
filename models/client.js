@@ -18,7 +18,7 @@ const clientSchema = new Schema({
   servicesCoverage: [ String ],
   serviceNotes: String,
   miscNotes: String,
-  age: { type: Date},
+  age: String,
   date: { type: Date, default: Date.now }
 });
 
