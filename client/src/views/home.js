@@ -78,7 +78,7 @@ function AppName() {
 
     return (
       <div>
-      <div className="home-container__title h1">
+      <div className="home-container__title h1 mainfont">
         {t("Title")}
         <div className="home-container__subtitle h5">
           <Trans i18nKey="Subtitle">

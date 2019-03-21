@@ -1,11 +1,26 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Container, FormValidation, FormRow, Col, TextInput } from "../components/forms"
 
 export default class Login extends Component {
     render() {
         return (
             <div>
-                <form>
+                <Container>
+                    <FormValidation>
+                        <FormRow>
+                            <Col size="md-12">
+                                <TextInput label="Email" 
+                                           id="login-email-input"
+                                           type="email"
+                                           placeholder="enter your email"
+                                           additionalClasses="anotherclass"
+                                           />
+                            </Col>
+                        </FormRow>
+                    </FormValidation>
+                </Container>
+                {/* <form>
                 <div className="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
@@ -21,7 +36,7 @@ export default class Login extends Component {
                 </div>
                 <Link className="btn btn-primary" to="/landing">Login</Link>
                 <Link className="btn btn-secondary" to="/">Cancel</Link>
-                </form>
+                </form> */}
             </div>
         )
     }
