@@ -1,7 +1,10 @@
 import React, { Component, Suspense } from "react";
 import { useTranslation, withTranslation, Trans } from "react-i18next";
-import "./home.scss"
+import { Link } from "react-router-dom";
 
+import "./home.scss"
+import Login from "./login"
+import Register from "./register"
 
 class Language extends Component {
 
@@ -98,11 +101,28 @@ function Page() {
   
     return (
         <div className="home-container">
-          <Language />
           <AppName />
+          <Language />
+          <ActionButtons />
       </div>
     );
   }
+
+function ActionButtons() {
+  return (
+    <div className="home-container__buttons">
+      <Link type="button" 
+              className="btn btn-primary"
+              to="/login"
+              >Login</Link>
+        <Link type="button" 
+              className="btn btn-primary"
+              to="/register"
+              >Register</Link>
+    </div>
+  )
+
+}
 
   // loading component for suspence fallback
 const Loader = () => (
@@ -117,6 +137,7 @@ const Loader = () => (
     return (
       <Suspense fallback={<Loader />}>
         <Page />
+
       </Suspense>
     );
   }
