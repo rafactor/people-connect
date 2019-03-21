@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Container, FormValidation, FormRow, Col, TextInput } from "../components/forms"
+import { Container, FormValidation, FormRow, Col, TextInput, Button, Check } from "../components/forms"
 
 export default class Login extends Component {
     render() {
@@ -16,9 +16,40 @@ export default class Login extends Component {
                                            placeholder="enter your email"
                                            additionalClasses="anotherclass"
                                            />
-                            </Col>
+                                <TextInput label="Password" 
+                                           id="login-password-input"
+                                           type="password"
+                                           placeholder="password"
+                                           additionalClasses="anotherclass"
+                                           />
+                                <Check label="Remember Me" 
+                                           id="login-check-remember"
+                                           type="password"
+                                           additionalClasses="anotherclass"
+                                           />
+                                </Col>
                         </FormRow>
+                            <Button 
+                                label="Log In"
+                                type="submit"
+                                additionalClasses="btn-primary"/>
                     </FormValidation>
+                    <hr/>
+                    <Button 
+                                label="Google +"
+                                type="button"
+                                additionalClasses="btn-primary btn-danger btn-login-with"/>
+                    
+                    <Button 
+                                label="Facebook"
+                                type="button"
+                                additionalClasses="btn-primary btn-login-with"/>
+                    
+                    <Button 
+                                label="Github"
+                                type="button"
+                                additionalClasses="btn-dark btn-login-with"/>
+
                 </Container>
                 {/* <form>
                 <div className="form-group">

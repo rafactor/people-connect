@@ -36,8 +36,33 @@ export function Col({ size, children }) {
  export function TextInput(props) {
     return (
       <div>  
-        <label htmlFor={props.id}>{props.label}</label>
-        <input className={`form-control ${props.additionalClasses}`} {...props} />
+        <label className="form-label col-form-label-lg" htmlFor={props.id}>{props.label}</label>
+        <input className={`form-control ${props.additionalClasses}`} {...props}/>
       </div>
     );
+  }
+
+  export function Button(props) {
+    return (
+  
+         <button className={`btn  btn-lg  ${props.additionalClasses}`} {...props}>
+                {props.label}
+          </button>
+     
+    )
+  }
+
+
+  export function Check(props) {
+    return (
+      <div className="form-group form-check">
+        <input  type="checkbox" 
+                className={`form-check-input ${props.additionalClasses}`} 
+                id={props.id}/>
+        <label className="form-check-label col-form-label" 
+               for={props.id}>
+               {props.label}
+        </label>
+      </div>
+    )
   }
