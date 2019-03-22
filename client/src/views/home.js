@@ -109,12 +109,14 @@ function Page() {
   }
 
 function ActionButtons() {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className="home-container__buttons">
       <Link type="button" 
               className="btn btn-primary"
               to="/login"
-              >Login</Link>
+              >{t("login")}</Link>
         <Link type="button" 
               className="btn btn-primary"
               to="/register"

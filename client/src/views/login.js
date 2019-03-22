@@ -1,12 +1,18 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { useTranslation, withTranslation, Trans } from "react-i18next";
 import { Container, FormValidation, FormRow, Col, TextInput, Button, Check } from "../components/forms"
+import { Header } from "../components/header";
+import { Link } from "react-router-dom";
+
 
 export default class Login extends Component {
     render() {
+        // const { t, i18n } = this.props;
+
         return (
             <div>
                 <Container>
+                    <Header heading="appName"/>
                     <FormValidation>
                         <FormRow>
                             <Col size="md-12">
@@ -24,15 +30,17 @@ export default class Login extends Component {
                                            />
                                 <Check label="Remember Me" 
                                            id="login-check-remember"
-                                           type="password"
                                            additionalClasses="anotherclass"
                                            />
                                 </Col>
                         </FormRow>
                             <Button 
-                                label="Log In"
+                                label="Sign In"
                                 type="submit"
                                 additionalClasses="btn-primary"/>
+
+                        <Link to="/register">Sign Up</Link>
+
                     </FormValidation>
                     <hr/>
                     <Button 
@@ -49,6 +57,7 @@ export default class Login extends Component {
                                 label="Github"
                                 type="button"
                                 additionalClasses="btn-dark btn-login-with"/>
+                  
 
                 </Container>
                 {/* <form>

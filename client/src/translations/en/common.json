@@ -2,5 +2,13 @@
     "Title": "People Connect",
     "Subtitle":"Find a service provider who speaks <strong>your language</strong>",
     "language": "language",
-    "appName": "People Connect"
+    "appName": "People Connect",
+    "login":"login",
+    "Email":"Email",
+    "enter your email":"enter your email",
+    "Password":"Password",
+    "password":"password",
+    "Remember Me":"Remember Me",
+    "Sign In":"Sign In",
+    "Sign Up":"Sign Up"
   }
