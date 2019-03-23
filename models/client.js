@@ -13,13 +13,7 @@ const clientSchema = new Schema({
   phone: { type: String, required: true},
   language: [ String ], 
   password: { type: String, required: true}, 
-  serviceProvier: Boolean,
-  servicesProvided: [ String ],
-  servicesCoverage: [ String ],
-  serviceNotes: String,
-  miscNotes: String,
-  age: String,
-  date: { type: Date, default: Date.now }
+  serviceProvier: Boolean
 });
 
 const Client = mongoose.model("Client", clientSchema);
