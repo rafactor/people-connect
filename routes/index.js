@@ -53,14 +53,4 @@ router.get('', (req, res) => {
 
 })
 
-// AUTH ROUTES 
-// LOGIN
-router.post('/login', (req, res) => {
-
-})
-
-// LOGOUT
-router.get('/logout', (req, res) => {
-
-})
 module.exports = router;

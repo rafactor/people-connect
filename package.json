@@ -19,8 +19,13 @@
     "nodemon": "^1.18.7"
   },
   "dependencies": {
+    "bcrypt": "^3.0.5",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.4",
     "express": "^4.16.3",
     "i18next": "^15.0.7",
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.4.19"
   }
 }
