@@ -1,40 +1,31 @@
+require('dotenv').config();
 const express = require("express");
 const path = require("path");
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 const app = express();
-const cookieParser = require("cookie-parser");
-const session = require("express-session");
+const mongoose = require("mongoose");
+
 // Define middleware here
-app.use(express.urlencoded({
-  extended: true
-}));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-// cookie-parser setup (needed for flash messages)
-app.use(cookieParser("keyboard cat"));
-// session setup (needed for Auth process)
-app.use(
-  session({
-    secret: process.env.SESSION_SECRET,
-    resave: false,
-    saveUninitialized: true
-  })
-);
+
+var MONGODB_URI = process.env.MONGODB_URI //|| "mongodb://localhost/express";
+
+mongoose.connect(MONGODB_URI,()=> {
+  console.log('connected to mongo DB')
+})
+
 
 // Define API routes here
-//-1: Authentication api
-app.use('/api/auth/', require('./routes/auth.js'));
-//-1: Index api
-app.use('/api/', require('./routes/'));
+
 // Send every other request to the React app
 // Define any API routes before this runs
 app.get("*", (req, res) => {
-  // not found
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
-  res.end();
 });
 
 app.listen(PORT, () => {

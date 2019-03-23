@@ -22,12 +22,9 @@ const clientSeed = [
     language: ["English"], 
     password: "12345", 
     serviceProvier: true,
-    servicesProvided: ["Lawyer"],
-    servicesCoverage: ["Toronto", "Mississauga"],
-    serviceNotes: "",
-    miscNotes: "",
-    age: "45",
-    date: new Date(Date.now())     
+    category: ["Lawyer"],
+    coverage: ["Toronto", "Mississauga"],
+    description: "",   
   },
   {
     firstName: "Larysa",

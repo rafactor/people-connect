@@ -6,9 +6,9 @@ export function Container({ fluid, children }) {
     return <div className={`container${fluid ? "-fluid" : ""}`}>{children}</div>;
 }
 
-export function FormValidation({children,action}){
+export function FormValidation({children}){
     return(
-        <form className="needs-validation" novalidate action={action} method={'POST'}>
+        <form className="needs-validation" novalidate>
             {children}
         </form>
     )
