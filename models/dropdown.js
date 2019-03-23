@@ -7,6 +7,6 @@ const dropdownSchema = new Schema({
 
 });
 
-const Dropdown = mongoose.model("Services", dropdownSchema);
+const Dropdown = mongoose.model("Dropdown", dropdownSchema);
 
 module.exports = Dropdown;

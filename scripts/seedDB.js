@@ -211,10 +211,19 @@ const clientSeed = [
   },
 
 ];
+const dropdownSeed = [
+  dropdown.category = ["Lawyer", "House Keeper", "Baby Sitter", "Doctor", "Contractor", "Plumber", "Electrician"],
+  dropdonw,coverage = ["Oakville", "Toronto", "Mississauga", "Brampton", "Markham", "Etobicoke", "Vaughan", "Burlington", "Milton"]
+];
+
 
 db.Client
   .remove({})
   .then(() => db.Client.collection.insertMany(clientSeed))
+  .then(data => {
+  db.Dropdown
+  .remove({})
+  .then(() => db.Dropdown.collection.insertMany(dropdownSeed))})
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
