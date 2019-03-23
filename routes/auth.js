@@ -20,7 +20,7 @@ router.post("/login", (req, res) => {
                         id: user._id,
                         language: user.language
                     };
-                    res.status(200).json("you are logged in");
+                    res.status(200).redirect('/landing');
                 } else {
                     // failed (josn the error)
                     res.status(404).json({
@@ -49,7 +49,7 @@ router.post("/signup", (req, res) => {
     // try to save user to db
     db.Client.create(newClient).then(result => {
         // done (success)
-        res.status(200).redirect('/page-to-redirect-after-signup');
+        res.status(200).redirect('/landing');
     }).catch(err => {
         // something went wrong(failure)
         res.status(404).json({
