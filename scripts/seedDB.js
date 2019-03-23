@@ -161,12 +161,13 @@ db.Client
   .then(() => db.Client.collection.insertMany(clientSeed))
   .then(data => {
   db.Dropdown
-  .remove({})
-  .then(() => db.Dropdown.collection.insertMany(dropdownSeed))})
-  .then(data => {
-    console.log(data.result.n + " records inserted!");
-    process.exit(0);
-  })
+    .remove({})
+    .then(() => db.Dropdown.collection.insertMany(dropdownSeed))
+    })
+    .then(data => {
+      console.log(data.result.n + " records inserted!");
+      process.exit(0);
+      })
   .catch(err => {
     console.error(err);
     process.exit(1);
