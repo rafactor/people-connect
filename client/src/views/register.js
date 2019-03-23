@@ -12,13 +12,12 @@ function RegisterForm() {
     return (
           <Container>
           <Header heading="Register"/>
-          <FormValidation action='/api/auth/signup'>
+          <FormValidation>
               <FormRow>
                   <Col size="md-12">
                       <TextInput label="First Name" 
                                 id="register-category-select"
                                 additionalClasses="anotherclass"
-                                name="firstName"
                                 />
 
                       <TextInput label="Last Name" 
@@ -26,7 +25,6 @@ function RegisterForm() {
                                 type="text"
                                 placeholder="Wick"
                                 additionalClasses="anotherclass"
-                                name="lastName"
                                 />    
 
                       <TextInput label="Address 1" 
@@ -34,7 +32,6 @@ function RegisterForm() {
                                 type="text"
                                 placeholder=""
                                 additionalClasses="anotherclass"
-                                name="address1"
                                 />
 
                       <TextInput label="Address 2" 
@@ -42,7 +39,6 @@ function RegisterForm() {
                                 type="text"
                                 placeholder=""
                                 additionalClasses="anotherclass"
-                                name="address2"
                                 />
 
                       <TextInput label="City" 
@@ -50,7 +46,6 @@ function RegisterForm() {
                                 type="text"
                                 placeholder=""
                                 additionalClasses="anotherclass"
-                                name="city"
                                 />
 
                       <TextInput label="Province" 
@@ -58,7 +53,6 @@ function RegisterForm() {
                                 type="text"
                                 placeholder=""
                                 additionalClasses="anotherclass"
-                                name="province"
                                 />
                       
                       <TextInput label="Postal Code" 
@@ -66,7 +60,6 @@ function RegisterForm() {
                                 type="text"
                                 placeholder=""
                                 additionalClasses="anotherclass"
-                                name="postalCode"
                                 />
 
                       <TextInput label="Phone" 
@@ -74,7 +67,6 @@ function RegisterForm() {
                                 type="number"
                                 placeholder=""
                                 additionalClasses="anotherclass"
-                                name="phone"
                                 />
 
                       <TextInput label="Email" 
@@ -82,14 +74,12 @@ function RegisterForm() {
                                 type="email"
                                 placeholder="enter your email"
                                 additionalClasses="anotherclass"
-                                name="email"
                                 />
 
 
                       <LanguageList label="Select your Languages" 
                                 id="register-language-input"
                                 additionalClasses="anotherclass"
-                                name="language"
                                 />
                                 
                       <TextInput label="Password" 
@@ -97,7 +87,6 @@ function RegisterForm() {
                                 type="password"
                                 placeholder="password"
                                 additionalClasses="anotherclass"
-                                name="password"
                                 />
 
                       </Col>
