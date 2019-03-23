@@ -1,49 +1,56 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Home from "./views/home";
+import Login from "./views/login";
+import Register from "./views/register"
 import "./App.scss";
-import 'materialize-css/dist/css/materialize.min.css'
-import M from 'materialize-css';
+import LandingPage from "./views/landing";
+import MyServicesPage from "./views/myservices";
+import NewService from "./views/newService"
+import ServiceDetail from "./views/service";
+import SearchPage from "./views/searchService";
+import ResultsPage from "./views/searchResults";
+import OfferPage from "./views/offer";
+import RequestPage from "./views/requestService";
+import ConfirmationPage from "./views/confirmation";
+
 
 
 class App extends Component {
 
-  componentDidMount(){
-    M.AutoInit();
-  }
 
   render() {
+
     return (
+      // <Home />
+      <Router>
       <div>
-        <nav className="nav-extended">
-          <div className="nav-wrapper">
-            <a href="#" className="brand-logo">Logo</a>
-            <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
-            <ul id="nav-mobile" className="right hide-on-med-and-down">
-              <li><a href="sass.html">Sass</a></li>
-              <li><a href="badges.html">Components</a></li>
-              <li><a href="collapsible.html">JavaScript</a></li>
-            </ul>
-          </div>
-          <div className="nav-content">
-            <ul className="tabs tabs-transparent">
-              <li className="tab"><a href="#test1">Test 1</a></li>
-              <li className="tab"><a className="active" href="#test2">Test 2</a></li>
-              <li className="tab disabled"><a href="#test3">Disabled Tab</a></li>
-              <li className="tab"><a href="#test4">Test 4</a></li>
-            </ul>
-          </div>
-        </nav>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/register" component={Register} />
+          <Route exact path="/landing" component={LandingPage} />
+          <Route exact path="/myservices" component={MyServicesPage} />
+          <Route exact path="/newservice" component={NewService} />
+          <Route exact path="/service" component={ServiceDetail} />
+          <Route exact path="/search" component={SearchPage} />
+          <Route exact path="/results" component={ResultsPage} />
+          <Route exact path="/offer" component={OfferPage} />
+          <Route exact path="/request" component={RequestPage} />
+          <Route exact path="/confirmation" component={ConfirmationPage} />
 
-        <ul className="sidenav" id="mobile-demo">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">JavaScript</a></li>
-        </ul>
 
-        <div id="test1" className="col s12 test">Test 1</div>
-        <div id="test2" className="col s12">Test 2</div>
-        <div id="test3" className="col s12">Test 3</div>
-        <div id="test4" className="col s12">Test 4</div>
+
+
+
+
+
+          {/* <Route exact path="/books/:id" component={Detail} />
+          <Route component={NoMatch} /> */}
+        </Switch>
       </div>
+    </Router>
     );
   }
 }
