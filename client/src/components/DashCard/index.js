@@ -1,5 +1,5 @@
 import React from "react";
-import { Jumbotron, Card, Col, Button, Table } from 'react-bootstrap';
+import { Card, Col, Button, Table } from 'react-bootstrap';
 
 function DashCard(props) {
     return (

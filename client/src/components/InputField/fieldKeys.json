@@ -1,0 +1,159 @@
+{
+    "name": {
+        "prepend": {
+            "variant": "secondary",
+            "icon": "fas fa-language"
+        },
+        "main": [
+            [
+                {
+                    "as": "input",
+                    "type": "text",
+                    "name": "name",
+                    "placeholder": "Name"
+                }
+            ]
+        ],
+        "append": {}
+    },
+    "role": {
+        "prepend": {
+            "variant": "warning",
+            "icon": "fas fa-users"
+        },
+        "main": [
+            [
+                {
+                    "as": "select",
+                    "type": "text",
+                    "name": "role",
+                    "placeholder": "Select a Role"
+                }
+            ]
+        ],
+        "append": {}
+    },
+    "contact": {
+        "prepend": {
+            "variant": "secondary",
+            "icon": "fas fa-user-circle"
+        },
+        "main": [
+            [
+                {
+                    "as": "input",
+                    "type": "text",
+                    "name": "contact",
+                    "placeholder": "Contact"
+                }
+            ]
+        ],
+        "append": {}
+    },
+    "email": {
+        "prepend": {
+            "variant": "dark",
+            "icon": "fas fa-envelope"
+        },
+        "main": [
+            [
+                {
+                    "as": "input",
+                    "type": "email",
+                    "name": "email",
+                    "placeholder": "E-mail Address"
+                }
+            ]
+        ],
+        "append": {}
+    },
+    "phone": {
+        "prepend": {
+            "variant": "info",
+            "icon": "fas fa-phone"
+        },
+        "main": [
+            [
+                {
+                    "as": "input",
+                    "type": "number",
+                    "name": "phone",
+                    "placeholder": "Phone Number"
+                }
+            ]
+        ],
+        "append": {}
+    },
+    "address": {
+        "prepend": {
+            "variant": "info",
+            "icon": "fas fa-map-marker-alt"
+        },
+        "main": [
+            [
+                {
+                    "as": "input",
+                    "type": "text",
+                    "name": "address",
+                    "placeholder": "Street Address"
+                }
+            ]
+        ],
+        "append": {}
+    },
+    "location": {
+        "prepend": {
+            "variant": "secondary",
+            "icon": "fas fa-map-marked-alt"
+        },
+        "main": [
+            [
+                {
+                    "as": "input",
+                    "type": "text",
+                    "name": "city",
+                    "placeholder": "City"
+                },
+                {
+                    "as": "input",
+                    "type": "text",
+                    "name": "province",
+                    "placeholder": "Province/State"
+                }
+            ],
+            [
+                {
+                    "as": "input",
+                    "type": "text",
+                    "name": "postal",
+                    "placeholder": "Postal Code"
+                },
+                {
+                    "as": "select",
+                    "type": "text",
+                    "name": "country",
+                    "placeholder": "Country"
+                }
+            ]
+        ],
+        "append": {}
+    },
+    "description": {
+        "prepend": {
+            "variant": "secondary",
+            "icon": "fas fa-search"
+        },
+        "main": [
+            [
+                {
+                    "as": "textarea",
+                    "type": "text",
+                    "name": "description",
+                    "placeholder": "Description",
+                    "class": "mh-2"
+                }
+            ]
+        ],
+        "append": {}
+    }
+}

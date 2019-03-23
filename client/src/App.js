@@ -6,6 +6,7 @@ import MainNav from "./components/MainNav"
 import MainContent from "./components/MainContent"
 import DashCard from "./components/DashCard"
 import MainModal from "./components/MainModal"
+import InputField from "./components/InputField"
 import { Container, Row, Button } from 'react-bootstrap';
 
 class App extends Component {
@@ -48,6 +49,10 @@ class App extends Component {
           <MainNav window={this.state.window} showModal={this.showModal}>
           </MainNav>
           <MainContent window={this.state.window}>
+            <InputField variant="name"></InputField>
+            <InputField variant="email"></InputField>
+            <InputField variant="phone"></InputField>
+            <InputField variant="contact"></InputField>
             <DashCard icon={"fas fa-building"} title={"Company"}>
             </DashCard>
             <DashCard icon={"fas fa-headset"} title={"Services"}>
