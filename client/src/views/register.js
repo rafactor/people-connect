@@ -1,7 +1,7 @@
 import React, { Component, Suspense } from "react";
 import { useTranslation, withTranslation, Trans } from "react-i18next";
 import { Link } from "react-router-dom";
-import { Container, FormValidation, FormRow, Col, TextInput, Button, Check } from "../components/forms"
+import { Container, FormValidation, FormRow, Col, LanguageList, TextInput, Button, Select } from "../components/forms"
 import { Header } from "../components/header"
 
 
@@ -16,9 +16,7 @@ function RegisterForm() {
               <FormRow>
                   <Col size="md-12">
                       <TextInput label="First Name" 
-                                id="register-first-name-input"
-                                type="text"
-                                placeholder="John"
+                                id="register-category-select"
                                 additionalClasses="anotherclass"
                                 />
 
@@ -71,9 +69,10 @@ function RegisterForm() {
                                 additionalClasses="anotherclass"
                                 />
 
-                      <TextInput label="Languages" 
+                      <div>Display the array of selected languages here</div>          
+
+                      <LanguageList label="Select your Languages" 
                                 id="register-language-input"
-                                type="text"
                                 additionalClasses="anotherclass"
                                 />
                                 
@@ -98,6 +97,8 @@ function RegisterForm() {
       </Container>
     );
   }
+
+
 
   // page uses the hook
 function Page() {
