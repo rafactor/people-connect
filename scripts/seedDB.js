@@ -22,9 +22,6 @@ const clientSeed = [
     language: ["English"], 
     password: "12345", 
     serviceProvier: true,
-    category: ["Lawyer"],
-    coverage: ["Toronto", "Mississauga"],
-    description: "",   
   },
   {
     firstName: "Larysa",
@@ -39,12 +36,6 @@ const clientSeed = [
     language: ["English", "Ukrainian"], 
     password: "12345", 
     serviceProvier: true,
-    servicesProvided: ["Baby Sitter", "House Cleaner"],
-    servicesCoverage: ["Mississauga"],
-    serviceNotes: "",
-    miscNotes: "",
-    age: "24",
-    date: new Date(Date.now())     
   },
   {
     firstName: "Ahmed",
@@ -59,12 +50,6 @@ const clientSeed = [
     language: ["Arabic", "English"], 
     password: "12345", 
     serviceProvier: false,
-    servicesProvided: [""],
-    servicesCoverage: [""],
-    serviceNotes: "",
-    miscNotes: "",
-    age: "",
-    date: new Date(Date.now())     
   },
   {
     firstName: "Yuri",
@@ -78,13 +63,6 @@ const clientSeed = [
     phone: "905 555-9876",
     language: ["Ukrainian"], 
     password: "12345", 
-    serviceProvier: false,
-    servicesProvided: [""],
-    servicesCoverage: [""],
-    serviceNotes: "",
-    miscNotes: "",
-    age: "",
-    date: new Date(Date.now())     
   },
   {
     firstName: "Abeer",
@@ -99,12 +77,6 @@ const clientSeed = [
     language: ["English", "Arabic"], 
     password: "12345", 
     serviceProvier: true,
-    servicesProvided: ["Doctor"],
-    servicesCoverage: ["Oakville", "Mississauga", "Toronto"],
-    serviceNotes: "",
-    miscNotes: "",
-    age: "45",
-    date: new Date(Date.now())     
   },
   {
     firstName: "Ibarahim",
@@ -119,12 +91,6 @@ const clientSeed = [
     language: ["English", "Arabic"], 
     password: "12345", 
     serviceProvier: false,
-    servicesProvided: [""],
-    servicesCoverage: [""],
-    serviceNotes: "",
-    miscNotes: "",
-    age: "",
-    date: new Date(Date.now())     
   },
   {
     firstName: "Nadia",
@@ -139,12 +105,6 @@ const clientSeed = [
     language: ["Ukrainian"], 
     password: "12345", 
     serviceProvier: false,
-    servicesProvided: [""],
-    servicesCoverage: [""],
-    serviceNotes: "",
-    miscNotes: "",
-    age: "",
-    date: new Date(Date.now())     
   },
   {
     firstName: "Amal",
@@ -159,12 +119,6 @@ const clientSeed = [
     language: ["Arabic", "English", "Ukrainian"], 
     password: "12345", 
     serviceProvier: true,
-    servicesProvided: ["Lawyer"],
-    servicesCoverage: ["Oakville", "Toronto", "Mississauga"],
-    serviceNotes: "",
-    miscNotes: "",
-    age: "46",
-    date: new Date(Date.now())     
   },
   {
     firstName: "Bob",
