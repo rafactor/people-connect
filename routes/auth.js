@@ -1,17 +1,13 @@
 const express = require("express");
 const router = express.Router();
-const db = require("../model");
+const db = require("../models/");
 const bcrypt = require("bcryptjs");
 let salt = bcrypt.genSaltSync(10);
 
 // handle login route
 router.post("/login", (req, res) => {
     // check DB to see if user exists
-    db.Client.findOne({
-        where: {
-            email: req.body.email
-        }
-    }).then(user => {
+    db.Client.findOne({ email: req.body.email}).then(user => {
         if (user) {
             // user is there -go ahead-
             // 1- compare passwords
@@ -19,12 +15,12 @@ router.post("/login", (req, res) => {
                 if (cb) {
                     // sucecces login - go ahead and save to session
                     req.session.user = {
-                        name: client.name,
-                        email: client.email,
-                        id: client._id,
-                        language: client.language
+                        name: user.name,
+                        email: user.email,
+                        id: user._id,
+                        language: user.language
                     };
-                    res.status(200).redirect( /*page or route to redirect to*/ "/");
+                    res.status(200).json("you are logged in");
                 } else {
                     // failed (josn the error)
                     res.status(404).json({
@@ -39,6 +35,9 @@ router.post("/login", (req, res) => {
                 errorMsg: "The email you entered couldn't be found."
             });
         }
+    }).catch(err=>{
+        console.log(err)
+        res.json({errorMsg: "Something went wrong"})
     });
 });
 // Handle sign up 
@@ -54,7 +53,8 @@ router.post("/signup", (req, res) => {
     }).catch(err => {
         // something went wrong(failure)
         res.status(404).json({
-            errorMsg: "Something went wrong!"
+            errorMsg: "Something went wrong!",
+            err
         });
     });
 });
