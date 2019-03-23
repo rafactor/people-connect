@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+mongoose.connect('mongodb://localhost:27017/peopleConect', {useNewUrlParser: true});
 const clientSchema = new Schema({
   firstName: { type: String, required: true },
   lastName: { type: String, required: true },
