@@ -1,66 +1,37 @@
 const express = require('express');
 const router = express.Router();
+const db=require('../models/')
 
-// SERVICES
-router.get('/services', (req, res) => {
-    // get all the services
-    db.Service.find({}).lean().then(services => {
-        res.json({
-            services
-        })
-    }).catch(err => {
-        res.json({
-            error: err
-        })
-    })
-});
-
-// ADD SERVICE
-router.post('/services/add', (req, res) => {
-    db.Service.create(req.body).then(created => {
-        // success service created
-        res.json({
-            created: true,
-            service: created
-        })
-    }).catch(err => {
-        // failure 
-        res.json({
-            created: false
-        });
-    })
-});
-
-// FETCH EVENTS
-router.get('/events', (req, res) => {
-    let query = {};
-    // here will be a query object
-    db.events.find(query).then(events => {
-        res.json(events);
-    })
-});
-
-// ACCEPT OR REJECT REQUEST
-router.get('/update/request', (req, res) => {
-    let query = {};
-    // build the query
-    db.events.findOneAndUpdate(query, {}).then(done => {
-
-    })
-});
-// SEND EMAILS 
-router.get('', (req, res) => {
-
+// get  serivces 
+router.get('/services', (req, res)=>{
+  let q={};
+  let query =req.query;
+  // build on query obj
+  if(query.category) q.category=query.category;
+  if(query.subCategory) q.subCategory=query.subCategory;
+  if(query.provider) q.provider=query.provider;
+  db.Services.find(query).then(services=>{
+      res.json(services)
+  })
 })
 
-// AUTH ROUTES 
-// LOGIN
-router.post('/login', (req, res) => {
-
+// add service 
+router.post('/services/add', (req, res)=>{
+    db.Services.create(req.body).then(service=>{
+      res.json({created: true, msg: "service has been created"})
+    }).catch(err=>{
+      res.json({created: false, msg: "something went wrong",err})
+    })
 })
 
-// LOGOUT
-router.get('/logout', (req, res) => {
-
+// delete service 
+router.get('/services/delete/:serviceid', (req, res)=>{
+    db.Services.findOneAndRemove({_id: req.params.id}).then(done=>{
+        res.json({deleted: true, msg: "Service has been deleted"});
+    }).catch(err=>{
+        res.json({deleted: false, msg: "Somthing went wrong"})
+    });
 })
+
+
 module.exports = router;
