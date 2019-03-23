@@ -1,3 +1,64 @@
-@import "./colors";
 
+.bg-dark-blue{
+    background-color: #073857!important;;
+  }
+  .bg-light-blue{
+  background-color:#457B9D!important;;
+  }
+  .text-dark-blue{
+  color: #073857!important;;
+  }
+  
+  .text-light-blue{
+  color: #457B9D!important;;
+  }
+  
+  .text-primary {
+  color: #bd5d38!important;
+  }
+  
+  a:hover, a:focus {
+  text-decoration: none;
+  }
 
+  .hover-dark-blue:hover{
+    background-color: #073857!important;
+    color: white;
+  }
+
+  .img-profile{
+  border: 0.2rem solid rgba(187, 177, 86, 0.5);
+  }
+  
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
+
+  .o-85{
+  opacity: 0.85;
+  }
+
+  .o-85:hover{
+  opacity: 1;
+  }
+  
+  .w-55{
+  width: 55%!important;
+  }
+  .w-85{
+    width: 85%!important;
+  }
+  .w-100{
+      width: 100%!important;
+  }
+  
+  .carousel-control-prev, .carousel-control-next{
+  width: 7.5%;
+  }
+  
