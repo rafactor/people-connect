@@ -6,6 +6,12 @@ import { Link } from "react-router-dom";
 
 
 export default class Login extends Component {
+
+    state ={
+        email:"",
+        password:"",
+        rememberMe:""
+    }
     render() {
         // const { t, i18n } = this.props;
 

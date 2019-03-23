@@ -1,6 +1,8 @@
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
+import Backend from 'i18next-locize-backend';
+
 import common_en from "./translations/en/common"
 import common_pt from "./translations/pt/common"
 import common_ar from "./translations/ar/common"

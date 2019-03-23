@@ -118,12 +118,20 @@ export function Col({ size, children }) {
     const { t, i18n } = useTranslation();
 
     return(
-      <div className="form-group">
+      <div>
         <label htmlFor={props.id} 
                className="form-check-label col-form-label-lg" >
                {t(props.label)}
         </label>
+        <div className="" id="selected-languages">
+        Display the array of selected languages
+        </div>
+     
+      <div className="input-group">
+
         <select className={`form-control ${props.additionalClasses}`} {...props}>
+            <option value="" disabled>Select a Language</option>
+            <option value=""></option>
             <option value="AF">Afrikanns</option>
             <option value="SQ">Albanian</option>
             <option value="AR">Arabic</option>
@@ -197,6 +205,11 @@ export function Col({ size, children }) {
             <option value="CY">Welsh</option>
             <option value="XH">Xhosa</option>
         </select>
+        <div className="input-group-append">
+          <button className="btn btn-outline-secondary" 
+                  type="button">{t("Add")}</button>
+        </div>
+     </div>
      </div>
     )
   }

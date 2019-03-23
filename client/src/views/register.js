@@ -54,6 +54,13 @@ function RegisterForm() {
                                 placeholder=""
                                 additionalClasses="anotherclass"
                                 />
+                      
+                      <TextInput label="Postal Code" 
+                                id="register-postal-code-input"
+                                type="text"
+                                placeholder=""
+                                additionalClasses="anotherclass"
+                                />
 
                       <TextInput label="Phone" 
                                 id="register-phone-input"
@@ -69,7 +76,6 @@ function RegisterForm() {
                                 additionalClasses="anotherclass"
                                 />
 
-                      <div>Display the array of selected languages here</div>          
 
                       <LanguageList label="Select your Languages" 
                                 id="register-language-input"
