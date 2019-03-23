@@ -19,7 +19,7 @@ export default class Login extends Component {
             <div>
                 <Container>
                     <Header heading="appName"/>
-                    <FormValidation>
+                    <FormValidation action="/api/auth/login">
                         <FormRow>
                             <Col size="md-12">
                                 <TextInput label="Email" 
@@ -27,12 +27,14 @@ export default class Login extends Component {
                                            type="email"
                                            placeholder="enter your email"
                                            additionalClasses="anotherclass"
+                                           name="email"
                                            />
                                 <TextInput label="Password" 
                                            id="login-password-input"
                                            type="password"
                                            placeholder="password"
                                            additionalClasses="anotherclass"
+                                           name="password"
                                            />
                                 <Check label="Remember Me" 
                                            id="login-check-remember"
