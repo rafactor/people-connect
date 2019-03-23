@@ -21,7 +21,7 @@ const clientSeed = [
     phone: "416 555-3333",
     language: ["English"], 
     password: "12345", 
-    serviceProvier: true,
+    serviceProvier: true
   },
   {
     firstName: "Larysa",
@@ -35,7 +35,7 @@ const clientSeed = [
     phone: "289 555-4444",
     language: ["English", "Ukrainian"], 
     password: "12345", 
-    serviceProvier: true,
+    serviceProvier: true
   },
   {
     firstName: "Ahmed",
@@ -49,7 +49,7 @@ const clientSeed = [
     phone: "905 555-4321",
     language: ["Arabic", "English"], 
     password: "12345", 
-    serviceProvier: false,
+    serviceProvier: false
   },
   {
     firstName: "Yuri",
@@ -62,7 +62,7 @@ const clientSeed = [
     email: "yurslob@gmail.com",
     phone: "905 555-9876",
     language: ["Ukrainian"], 
-    password: "12345", 
+    password: "12345"
   },
   {
     firstName: "Abeer",
@@ -76,7 +76,7 @@ const clientSeed = [
     phone: "905 844-1212",
     language: ["English", "Arabic"], 
     password: "12345", 
-    serviceProvier: true,
+    serviceProvier: true
   },
   {
     firstName: "Ibarahim",
@@ -90,7 +90,7 @@ const clientSeed = [
     phone: "905 844-1212",
     language: ["English", "Arabic"], 
     password: "12345", 
-    serviceProvier: false,
+    serviceProvier: false
   },
   {
     firstName: "Nadia",
@@ -104,7 +104,7 @@ const clientSeed = [
     phone: "905 555-4356",
     language: ["Ukrainian"], 
     password: "12345", 
-    serviceProvier: false,
+    serviceProvier: false
   },
   {
     firstName: "Amal",
@@ -118,7 +118,7 @@ const clientSeed = [
     phone: "289 555-0983",
     language: ["Arabic", "English", "Ukrainian"], 
     password: "12345", 
-    serviceProvier: true,
+    serviceProvier: true
   },
   {
     firstName: "Bob",
@@ -132,13 +132,7 @@ const clientSeed = [
     phone: "905 555-9045",
     language: ["Ukrainian", "English"], 
     password: "12345", 
-    serviceProvier: false,
-    servicesProvided: [""],
-    servicesCoverage: [""],
-    serviceNotes: "",
-    miscNotes: "",
-    age: "",
-    date: new Date(Date.now())     
+    serviceProvier: false 
   },
   {
     firstName: "Miriam",
@@ -152,19 +146,13 @@ const clientSeed = [
     phone: "416 555-0867",
     language: ["Arabic"], 
     password: "12345", 
-    serviceProvier: false,
-    servicesProvided: [""],
-    servicesCoverage: [""],
-    serviceNotes: "",
-    miscNotes: "",
-    age: "",
-    date: new Date(Date.now())     
+    serviceProvier: false    
   },
 
 ];
 const dropdownSeed = [
   dropdown.category = ["Lawyer", "House Keeper", "Baby Sitter", "Doctor", "Contractor", "Plumber", "Electrician"],
-  dropdonw,coverage = ["Oakville", "Toronto", "Mississauga", "Brampton", "Markham", "Etobicoke", "Vaughan", "Burlington", "Milton"]
+  dropdown.coverage = ["Oakville", "Toronto", "Mississauga", "Brampton", "Markham", "Etobicoke", "Vaughan", "Burlington", "Milton"]
 ];
 
 
