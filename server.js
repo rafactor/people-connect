@@ -13,8 +13,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-var MONGODB_URI = process.env.MONGODB_URI //|| "mongodb://localhost/express";
-
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/express";
 mongoose.connect(MONGODB_URI,()=> {
   console.log('connected to mongo DB')
 })
