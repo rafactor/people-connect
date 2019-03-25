@@ -1,4 +1,14 @@
 {
+    "hashtag": {
+        "icon": "fas fa-hashtag",
+        "text": "",
+        "variant": "outline-light"
+    },
+    "plus": {
+        "icon": "fas fa-plus",
+        "text": "",
+        "variant": "warning"
+    },
     "add": {
         "icon": "fas fa-plus-circle",
         "text": "Add",
@@ -42,7 +52,7 @@
     "login": {
         "icon": "fas fa-sign-in-alt",
         "text": "Login",
-        "variant": "secondary"
+        "variant": "primary"
     },
     "logout": {
         "icon": "fas fa-sign-out-alt",
@@ -62,11 +72,11 @@
     "register": {
         "icon": "fas fa-user-plus",
         "text": "Register",
-        "variant": "outline-info"
+        "variant": "warning"
     },
     "return": {
         "icon": "fas fa-arrow-circle-left",
         "text": "Return",
-        "variant": "outline-secondary"
+        "variant": "outline-dark"
     }
 }

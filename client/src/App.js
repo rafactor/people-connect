@@ -2,18 +2,13 @@ import React, { Component } from "react";
 
 import MainNav from "./components/MainNav"
 import MainContent from "./components/MainContent"
-import DashCard from "./components/DashCard"
-import DashTable from "./components/DashTable"
 import MainModal from "./components/MainModal"
-import InputField from "./components/InputField"
 import Login from "./views/login"
-import Register from "./views/register";
-import Landing from "./views/landing";
-import { Container, Row, Card } from "react-bootstrap";
+import Dashboard from "./views/dashboard";
+import { Container, Row } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import navItems from "./components/navItems.json"
-import tableData from "./components/tableData.json"
 
 class App extends Component {
 
@@ -21,6 +16,14 @@ class App extends Component {
     window: {
       width: 0,
       height: 0
+    },
+    login: {
+      method: ""
+    },
+    service: {
+      type: ""
+    },
+    input: {
     },
     modal: {
       show: false,
@@ -30,16 +33,28 @@ class App extends Component {
   };
 
   hideModal = () => {
-    let modal = this.state.modal
+    let modal = this.state.modal;
     modal.show = false;
     this.setState({ modal: modal });
   }
-
   showModal = () => {
-    let modal = this.state.modal
+    let modal = this.state.modal;
     modal.show = true;
     this.setState({ modal: modal });
   }
+
+  changeLoginMethod = (method) => {
+    let login = this.state.login;
+    login.method = method;
+    this.setState({ login: login });
+  }
+
+  changeServiceType = (type) => {
+    let service = this.state.service;
+    service.type = type;
+    this.setState({ type: type });
+  }
+
 
   componentDidMount() {
     this.updateWindowDimensions();
@@ -66,17 +81,8 @@ class App extends Component {
           </Router>
           <MainContent window={this.state.window}>
 
-
-
-            <Login />
-            <Register />
-            <Landing />
-
-            <DashCard header={{ icon: "far fa-user", text: "Hello! Micheal" }} footer={<></>} plus>
-              <Card.Title>List of Services Nearby</Card.Title>
-              <Card.Text>Select one of the following services</Card.Text>
-              <DashTable data={tableData} />
-            </DashCard>
+            <Login method={this.state.login.method} changeMethod={this.changeLoginMethod} />
+            <Dashboard showModal={this.showModal} />
 
           </MainContent>
           <MainModal
