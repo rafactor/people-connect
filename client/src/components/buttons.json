@@ -1,0 +1,72 @@
+{
+    "add": {
+        "icon": "fas fa-plus-circle",
+        "text": "Add",
+        "variant": "warning"
+    },
+    "apply": {
+        "icon": "fas fa-check-double",
+        "text": "Apply",
+        "variant": "info"
+    },
+    "cancel": {
+        "icon": "fas fa-times",
+        "text": "Cancel",
+        "variant": "secondary"
+    },
+    "confirm": {
+        "icon": "fas fa-check-double",
+        "text": "Confirm",
+        "variant": "info"
+    },
+    "dismiss": {
+        "icon": "fas fa-times",
+        "text": "Dismiss",
+        "variant": "outline-secondary"
+    },
+    "edit": {
+        "icon": "fas fa-edit",
+        "text": "Edit",
+        "variant": "info"
+    },
+    "google": {
+        "icon": "fab fa-google-plus-g",
+        "text": "Google",
+        "variant": "success"
+    },
+    "facebook": {
+        "icon": "fab fa-facebook-square",
+        "text": "Facebook",
+        "variant": "primary"
+    },
+    "login": {
+        "icon": "fas fa-sign-in-alt",
+        "text": "Login",
+        "variant": "secondary"
+    },
+    "logout": {
+        "icon": "fas fa-sign-out-alt",
+        "text": "Logout",
+        "variant": "danger"
+    },
+    "buy": {
+        "icon": "fas fa-shopping-cart",
+        "text": "Buy",
+        "variant": "outline-info"
+    },
+    "sell": {
+        "icon": "fas fa-store",
+        "text": "Sell",
+        "variant": "outline-dark"
+    },
+    "register": {
+        "icon": "fas fa-user-plus",
+        "text": "Register",
+        "variant": "outline-info"
+    },
+    "return": {
+        "icon": "fas fa-arrow-circle-left",
+        "text": "Return",
+        "variant": "outline-secondary"
+    }
+}

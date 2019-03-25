@@ -1,71 +1,55 @@
 import React from "react";
-import { Form, FormControl, Col, Button, InputGroup, Container } from 'react-bootstrap';
-import fields from './fieldKeys.json';
+import { Form, Col, Button, InputGroup } from 'react-bootstrap';
+import fields from './fields.json';
 
-function render(props) {
+function InputField(props) {
     var field = fields[props.variant]
-    console.log(field)
-    if (field) {
-        return (
-            <Form.Row className="form-group">
-                <InputGroup.Prepend>
-                    <Button variant={field.prepend.variant}>
-                        <i className={field.prepend.icon}></i>
-                    </Button>
-                </InputGroup.Prepend>
-                <Col>
-                    {field.main.map(row => (
-                        <InputGroup>
-                            {row.map(input => {
-                                if (input.as === "select") {
-                                    return (
-                                        < FormControl
-                                            as={props.as || input.as}
-                                            type={props.type || input.type}
-                                            name={props.name || input.name}
-                                            placeholder={props.placeholder || input.placeholder}
-                                            className={(props.placeholder + input.class) || ""}
-                                        >
-                                            {renderOptions(props.options, props.placeholder, input.placeholder)}
-                                        </FormControl>
-                                    )
-                                }
+    if (!field) {
+        return (<></>);
+    }
+    return (
+        <Form.Group as={Form.Row} className={props.className || ""}>
+            <InputGroup.Prepend style={{ minWidth: "3em" }}>
+                <Button className="w-100 shadow" variant={field.prepend.variant}>
+                    <i className={field.prepend.icon}></i>
+                </Button>
+            </InputGroup.Prepend>
+            <Col>
+                {field.main.map(row => (
+                    <InputGroup>
+                        {row.map(input => {
+                            if (input.as === "select") {
                                 return (
-                                    < FormControl
+                                    < Form.Control
                                         as={props.as || input.as}
                                         type={props.type || input.type}
                                         name={props.name || input.name}
                                         placeholder={props.placeholder || input.placeholder}
-                                        className={(props.placeholder + input.class) || ""}
-                                    />
+                                        className={`${input.class || ""} shadow`}
+                                        defaultValue={""}
+                                    >
+                                        <option value="">{props.placeholder || input.placeholder}</option>
+                                        {input.options.map(option => (
+                                            <option value={option.value}>{option.text}</option>))}
+                                    </Form.Control>
                                 )
-                            })}
-                        </InputGroup>
-                    ))}
-                </Col>
-                <InputGroup.Append>
-                </InputGroup.Append>
-            </Form.Row>
-        )
-    }
-    return <></>
-}
-
-function renderOptions(options, placeholder, defaultPlaceholde) {
-    return <>
-        <option value="" selected>{placeholder || defaultPlaceholde}</option>
-        {options.map(option => (
-            <option value={option.value}>{option.text}</option>))}
-    </>
-}
-
-function InputField(props) {
-
-    return (
-        <Container>
-            {render(props)}
-        </Container>
-
+                            }
+                            return (
+                                < Form.Control
+                                    as={props.as || input.as}
+                                    type={props.type || input.type}
+                                    name={props.name || input.name}
+                                    placeholder={props.placeholder || input.placeholder}
+                                    className={`${input.class || ""} shadow`}
+                                />
+                            )
+                        })}
+                    </InputGroup>
+                ))}
+            </Col>
+            <InputGroup.Append>
+            </InputGroup.Append>
+        </Form.Group>
     );
 }
 

@@ -1,13 +1,19 @@
 import React, { Component } from "react";
-//import "./App.scss";
-//import 'materialize-css/dist/css/materialize.min.css'
-//import MainContainer from "./components/MainContainer"
+
 import MainNav from "./components/MainNav"
 import MainContent from "./components/MainContent"
 import DashCard from "./components/DashCard"
+import DashTable from "./components/DashTable"
 import MainModal from "./components/MainModal"
 import InputField from "./components/InputField"
-import { Container, Row, Button } from 'react-bootstrap';
+import Login from "./views/login"
+import Register from "./views/register";
+import Landing from "./views/landing";
+import { Container, Row, Card } from "react-bootstrap";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import navItems from "./components/navItems.json"
+import tableData from "./components/tableData.json"
 
 class App extends Component {
 
@@ -18,15 +24,21 @@ class App extends Component {
     },
     modal: {
       show: false,
+      header: { icon: "fas fa-building", text: "Company" },
+      footer: { abort: "cancel", process: "apply" }
     }
   };
 
   hideModal = () => {
-    this.setState({ modal: { show: false } });
+    let modal = this.state.modal
+    modal.show = false;
+    this.setState({ modal: modal });
   }
 
   showModal = () => {
-    this.setState({ modal: { show: true } });
+    let modal = this.state.modal
+    modal.show = true;
+    this.setState({ modal: modal });
   }
 
   componentDidMount() {
@@ -44,21 +56,36 @@ class App extends Component {
 
   render() {
     return (
+
       <Container fluid={true}>
         <Row>
-          <MainNav window={this.state.window} showModal={this.showModal}>
-          </MainNav>
+          <Router>
+            <Route exact path="/"
+              render={(props) => <MainNav {...props} window={this.state.window} items={navItems} showModal={this.showModal} />}
+            />
+          </Router>
           <MainContent window={this.state.window}>
-            <InputField variant="name"></InputField>
-            <InputField variant="email"></InputField>
-            <InputField variant="phone"></InputField>
-            <InputField variant="contact"></InputField>
-            <DashCard icon={"fas fa-building"} title={"Company"}>
+
+
+
+            <Login />
+            <Register />
+            <Landing />
+
+            <DashCard header={{ icon: "far fa-user", text: "Hello! Micheal" }} footer={<></>} plus>
+              <Card.Title>List of Services Nearby</Card.Title>
+              <Card.Text>Select one of the following services</Card.Text>
+              <DashTable data={tableData} />
             </DashCard>
-            <DashCard icon={"fas fa-headset"} title={"Services"}>
-            </DashCard>
+
           </MainContent>
-          <MainModal show={this.state.modal.show} hideModal={this.hideModal}>
+          <MainModal
+            show={this.state.modal.show}
+            hideModal={this.hideModal}
+            header={this.state.modal.header}
+            footer={this.state.modal.footer}
+            onProcess={""}
+          >
           </MainModal>
         </Row>
       </Container>

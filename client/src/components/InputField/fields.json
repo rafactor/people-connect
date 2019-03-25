@@ -2,7 +2,7 @@
     "name": {
         "prepend": {
             "variant": "secondary",
-            "icon": "fas fa-language"
+            "icon": "fas fa-signature"
         },
         "main": [
             [
@@ -11,6 +11,37 @@
                     "type": "text",
                     "name": "name",
                     "placeholder": "Name"
+                }
+            ]
+        ],
+        "append": {}
+    },
+    "language": {
+        "prepend": {
+            "variant": "dark",
+            "icon": "fas fa-language"
+        },
+        "main": [
+            [
+                {
+                    "as": "select",
+                    "type": "text",
+                    "name": "language",
+                    "placeholder": "Select Language",
+                    "options": [
+                        {
+                            "text": "عربي",
+                            "value": "AR"
+                        },
+                        {
+                            "text": "English",
+                            "value": "EN"
+                        },
+                        {
+                            "text": "French",
+                            "value": "FR"
+                        }
+                    ]
                 }
             ]
         ],
@@ -84,6 +115,23 @@
         ],
         "append": {}
     },
+    "password": {
+        "prepend": {
+            "variant": "warning",
+            "icon": "fas fa-key"
+        },
+        "main": [
+            [
+                {
+                    "as": "input",
+                    "type": "password",
+                    "name": "password",
+                    "placeholder": "Password"
+                }
+            ]
+        ],
+        "append": {}
+    },
     "address": {
         "prepend": {
             "variant": "info",
@@ -103,7 +151,7 @@
     },
     "location": {
         "prepend": {
-            "variant": "secondary",
+            "variant": "dark",
             "icon": "fas fa-map-marked-alt"
         },
         "main": [
@@ -132,7 +180,13 @@
                     "as": "select",
                     "type": "text",
                     "name": "country",
-                    "placeholder": "Country"
+                    "placeholder": "Select Country",
+                    "options": [
+                        {
+                            "text": "Canada",
+                            "value": "CA"
+                        }
+                    ]
                 }
             ]
         ],

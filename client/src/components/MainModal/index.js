@@ -1,13 +1,28 @@
 import React from "react";
 import { Button, Modal, Container, Jumbotron } from 'react-bootstrap';
+import buttons from "../buttons.json";
 
+function renderFooter(footer, hideModal) {
+    var abortBtn = buttons[footer.abort];
+    var processBtn = buttons[footer.process];
+    return (
+        <>
+            <Button variant={abortBtn.variant} onClick={hideModal}>
+                <i className={abortBtn.icon}></i>{" " + abortBtn.text}
+            </Button>
+            <Button variant={processBtn.variant}>
+                <i className={processBtn.icon}></i>{" " + processBtn.text}
+            </Button>
+        </>
+    )
+}
 function MainModal(props) {
     return (
-        <Modal show={props.show} onHide={props.hideModal}>
+        <Modal centered size="lg" show={props.show} onHide={props.hideModal}>
             <Modal.Header className="bg-dark-blue justify-content-between">
                 <Button variant="outline-light" >
-                    <i className="fas fa-building"></i> Company
-                    </Button>
+                    <i className={props.header.icon}></i> {props.header.text}
+                </Button>
                 <Button variant="outline-light" className="ml-2">
                     <i className="fas fa-hashtag"></i> 2
                     </Button>
@@ -21,12 +36,7 @@ function MainModal(props) {
                 </Jumbotron>
             </Modal.Body>
             <Modal.Footer style={{ backgroundColor: "#e9ecef" }}>
-                <Button variant="secondary" onClick={props.hideModal}>
-                    <i className="fas fa-times"></i> Close
-                </Button>
-                <Button variant="info" onClick={props.hideModal}>
-                    <i className="fas fa-check-double"></i> Apply
-                    </Button>
+                {renderFooter(props.footer, props.hideModal)}
             </Modal.Footer>
         </Modal>
     );
