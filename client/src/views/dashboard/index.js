@@ -27,7 +27,7 @@ function Dashboard(props) {
                 {}
                 <DashCard fluid
                     header={[
-                        { icon: "fas fa-shopping-cart", text: "Other's Services" },
+                        { icon: "fas fa-shopping-cart", text: "Available Services" },
                         { icon: "fas fa-headset", text: "My Services" },
                         { icon: "fas fa-headset", text: "My Services" }]}
                     footer={<></>}
