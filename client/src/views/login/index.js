@@ -124,13 +124,19 @@ function Login(props) {
 
     return (
 
-        <DashCard header={[<></>]} footer={<></>}>
+        <DashCard
+            header={{
+                left: [{}],
+                right: [{}]
+            }}
+            footer={<></>}
+        >
 
             <Logo />
             {renderContent(props.method, props.changeMethod)}
 
 
-        </DashCard>
+        </DashCard >
     );
 }
 

@@ -4,6 +4,13 @@ import buttons from "./buttons.json";
 
 function Register(props) {
     var selectedBtn = buttons[props.type]
+    if (!selectedBtn) {
+        selectedBtn = {
+            variant: "info",
+            icon: "",
+            text: "",
+        }
+    }
     return (
         <Button
             size={props.size || ""}

@@ -11,7 +11,14 @@ function Dashboard(props) {
 
     return (
         <>
-            <DashCard fluid header={[{ icon: "far fa-user", text: "Hello! Micheal" }]} footer={<></>} >
+            <DashCard fluid
+                header={{
+                    left: [
+                        { type: "user", varian: "info", text: "Hello! Micheal", onClick: "" },
+                    ],
+                    right: [{}]
+                }}
+                footer={<></>} >
 
                 <Row className="mt-5 py-4">
                     <Col sm={6} className="text-right py-0 px-1">
@@ -26,12 +33,19 @@ function Dashboard(props) {
                 </Row>
                 {}
                 <DashCard fluid
-                    header={[
-                        { icon: "fas fa-shopping-cart", text: "Available Services" },
-                        { icon: "fas fa-headset", text: "My Services" },
-                        { icon: "fas fa-headset", text: "My Services" }]}
+                    header={{
+                        left: [
+                            { type: "buy", varian: "info", onClick: "", text: "Available Services" },
+                            { type: "buy", varian: "info", onClick: "", icon: "fas fa-headset", text: "My Services" },
+                            { type: "buy", varian: "info", onClick: "", icon: "fas fa-headset", text: "My Services" }
+                        ],
+                        right: [
+                            { type: "plus", varian: "info", onClick: "", text: "Available Services" },
+                            { type: "buy", varian: "info", onClick: "", icon: "fas fa-headset", text: "My Services" },
+                            { type: "buy", varian: "info", onClick: "", icon: "fas fa-headset", text: "My Services" }
+                        ]
+                    }}
                     footer={<></>}
-                    plus={{ text: "Add Service", onClick: props.showModal }}
                 >
 
                     <Card.Title>List of Services Nearby</Card.Title>

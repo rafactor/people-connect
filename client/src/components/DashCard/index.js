@@ -11,20 +11,35 @@ function DashCard(props) {
         <Col xl={12} className="mb-3">
             <Card className="border-dark shadow-lg">
                 <Card.Header className="bg-dark justify-content-center">
-                    {props.header.map(btn => {
+                    {props.header.left.map(btn => {
                         return (
-                            <Button
+                            <MyButton
+                                type={btn.type}
                                 className={`float-left mx-2 ${btn.className || ""}`}
                                 variant={btn.variant || "info"}
+                                href={btn.href}
+                                onClick={btn.onClick}
+                                icon={btn.icon}
+                                text={btn.text}
+                            >
+                            </MyButton>
+                        )
+                    })}
+                    {props.header.right.map(btn => {
+                        return (
+                            <MyButton
+                                type={btn.type}
+                                className={`float-right mx-2 ${btn.className || ""}`}
+                                variant={btn.variant || "info"}
                                 href={btn.href || ""}
-                                onClick={btn.onClick || ""} >
-                                <i className={btn.icon}></i> {btn.text}
-                            </Button>
+                                onClick={btn.onClick || ""}
+                                icon={btn.icon || ""}
+                                text={btn.text || ""}
+                            >
+                            </MyButton>
                         )
                     })}
 
-
-                    {(props.plus) ? <MyButton className="float-right" type="plus" text={props.plus.text} onClick={props.plus.onClick} /> : <></>}
                 </Card.Header>
                 <Card.Body>
                     <Jumbotron className="m-0">

@@ -74,6 +74,11 @@
         "text": "Register",
         "variant": "warning"
     },
+    "user": {
+        "icon": "far fa-user",
+        "text": "",
+        "variant": "info"
+    },
     "return": {
         "icon": "fas fa-arrow-circle-left",
         "text": "Return",

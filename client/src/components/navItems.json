@@ -34,14 +34,6 @@
                 "icon": "fas fa-clipboard-list",
                 "text": "Tickets",
                 "href": ""
-            },
-            {
-                "type": "divider"
-            },
-            {
-                "icon": "fas fa-building",
-                "text": "Company",
-                "href": ""
             }
         ]
     ],
