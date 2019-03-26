@@ -50,12 +50,12 @@ function LanguageSelector(props) {
 
     return(
         <div>
-          <div className="language-selector row form-group">
-            <div className="col-3 language-select__label">
-              <label htmlFor="language-select">{t("language")}</label>
+          <div className="home-container__language row form-group">
+            <div className="col-7 home-container__language-label">
+              <label htmlFor="language-select">{t("select your language")}</label>
             </div>
-            <div className="col">
-              <select className="language-selector__select" 
+            <div className="col-3">
+              <select className="home-container__language-select" 
                       name= "selectedLanguage"
                       id="language-select"
                     //   value=""
@@ -78,14 +78,19 @@ function AppName() {
 
     return (
       <div>
-      <div className="home-container__title h1 mainfont">
+        <div className="home-container">
+       
+
+      <div className="home-container__title">
         {t("Title")}
-        <div className="home-container__subtitle h5">
+      </div>
+      <div className="home-container__subtitle">
           <Trans i18nKey="Subtitle">
             Find a service provider who speaks{" "}
             <strong>your language</strong>
           </Trans>
         </div>
+      
       </div>
       </div>
     );
@@ -100,10 +105,19 @@ function Page() {
     };
   
     return (
-        <div className="home-container">
+        <div className="container">
+          {/* <div className="row"> */}
           <AppName />
+          {/* </div>
+          <div className="row"> */}
           <Language />
+          {/* </div>
+          <div className="row"> */}
           <ActionButtons />
+          {/* </div> */}
+          
+          
+          
       </div>
     );
   }
@@ -112,15 +126,17 @@ function ActionButtons() {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className="home-container__buttons">
+    <div className="col-12 home-container__actions">
+      <div className="row">
       <Link type="button" 
-              className="btn btn-primary"
+              className="home-container__buttons btn btn-primary"
               to="/login"
               >{t("login")}</Link>
         <Link type="button" 
-              className="btn btn-primary"
+              className="home-container__buttons btn btn-primary"
               to="/register"
               >Register</Link>
+    </div>
     </div>
   )
 

@@ -1,7 +1,7 @@
 {
     "Title": "People Connect",
     "Subtitle":"Find a service provider who speaks <strong>your language</strong>",
-    "language": "language",
+    "select your language": "select your language",
     "appName": "People Connect",
     "login":"login",
     "Email":"Email",
