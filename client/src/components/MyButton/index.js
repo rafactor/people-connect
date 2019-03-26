@@ -6,17 +6,22 @@ function Register(props) {
     var selectedBtn = buttons[props.type]
     if (!selectedBtn) {
         selectedBtn = {
-            variant: "info",
+            variant: "dark",
             icon: "",
-            text: "",
+            text: " ",
+            className: "text-dark",
+            icon: "fas fa-dot-circle text-dark"
         }
     }
     return (
         <Button
             size={props.size || ""}
             className={`shadow ${props.className || ""}`}
+            href={props.href || ""}
             variant={props.variant || selectedBtn.variant}
-            onClick={props.onClick}>
+            onClick={props.onClick}
+            active={props.active || false}
+        >
             <i className={props.icon || selectedBtn.icon}></i> {props.text || selectedBtn.text}
         </Button>
     );

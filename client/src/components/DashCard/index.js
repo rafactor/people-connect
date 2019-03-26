@@ -7,6 +7,8 @@ function called when plus is pressed
 */
 
 function DashCard(props) {
+    if (!props.header.left) props.header.left = [{}];
+    if (!props.header.right) props.header.right = [{}];
     return (
         <Col xl={12} className="mb-3">
             <Card className="border-dark shadow-lg">
@@ -15,9 +17,10 @@ function DashCard(props) {
                         return (
                             <MyButton
                                 type={btn.type}
-                                className={`float-left mx-2 ${btn.className || ""}`}
-                                variant={btn.variant || "info"}
+                                className={`float-left mx-2 ${btn.className}`}
+                                variant={btn.variant}
                                 href={btn.href}
+                                active={btn.active}
                                 onClick={btn.onClick}
                                 icon={btn.icon}
                                 text={btn.text}
@@ -29,12 +32,13 @@ function DashCard(props) {
                         return (
                             <MyButton
                                 type={btn.type}
-                                className={`float-right mx-2 ${btn.className || ""}`}
-                                variant={btn.variant || "info"}
-                                href={btn.href || ""}
-                                onClick={btn.onClick || ""}
-                                icon={btn.icon || ""}
-                                text={btn.text || ""}
+                                className={`float-right mx-2 ${btn.className}`}
+                                variant={btn.variant}
+                                href={btn.href}
+                                active={btn.active}
+                                onClick={btn.onClick}
+                                icon={btn.icon}
+                                text={btn.text}
                             >
                             </MyButton>
                         )

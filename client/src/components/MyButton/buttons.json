@@ -59,25 +59,30 @@
         "text": "Logout",
         "variant": "danger"
     },
-    "buy": {
+    "order": {
         "icon": "fas fa-shopping-cart",
         "text": "Buy",
-        "variant": "outline-info"
+        "variant": "outline-dark"
     },
-    "sell": {
+    "market": {
         "icon": "fas fa-store",
         "text": "Sell",
-        "variant": "outline-dark"
+        "variant": "outline-info"
     },
     "register": {
         "icon": "fas fa-user-plus",
         "text": "Register",
-        "variant": "warning"
+        "variant": "dark"
     },
     "user": {
         "icon": "far fa-user",
         "text": "",
         "variant": "info"
+    },
+    "service": {
+        "icon": "fas fa-headset",
+        "text": "Service",
+        "variant": "outline-info"
     },
     "return": {
         "icon": "fas fa-arrow-circle-left",

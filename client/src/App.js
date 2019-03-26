@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import MainNav from "./components/MainNav"
 import MainContent from "./components/MainContent"
 import MainModal from "./components/MainModal"
-import Login from "./views/login"
+import Login from "./views/login/index"
 import Dashboard from "./views/dashboard";
 import { Container, Row } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -52,9 +52,8 @@ class App extends Component {
   changeServiceType = (type) => {
     let service = this.state.service;
     service.type = type;
-    this.setState({ type: type });
+    this.setState({ service: service });
   }
-
 
   componentDidMount() {
     this.updateWindowDimensions();
@@ -82,7 +81,7 @@ class App extends Component {
           <MainContent window={this.state.window}>
 
             <Login method={this.state.login.method} changeMethod={this.changeLoginMethod} />
-            <Dashboard showModal={this.showModal} />
+            <Dashboard type={this.state.service.type} changeType={this.changeServiceType} />
 
           </MainContent>
           <MainModal

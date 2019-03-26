@@ -30,16 +30,20 @@
                     "placeholder": "Select Language",
                     "options": [
                         {
-                            "text": "عربي",
-                            "value": "AR"
+                            "text": "Arabic (عربي)",
+                            "value": "ar"
                         },
                         {
                             "text": "English",
-                            "value": "EN"
+                            "value": "en"
                         },
                         {
-                            "text": "French",
-                            "value": "FR"
+                            "text": "Ukrainian (Ukraine)",
+                            "value": "ua"
+                        },
+                        {
+                            "text": "Portuguese",
+                            "value": "pt"
                         }
                     ]
                 }

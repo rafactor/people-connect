@@ -1,6 +1,6 @@
 import React from "react";
 import { Form, Col, Button, InputGroup } from 'react-bootstrap';
-import fields from './fields.json';
+import fields from './inputField.json';
 
 function InputField(props) {
     var field = fields[props.variant]
