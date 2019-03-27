@@ -49,7 +49,14 @@
             },
             {
                 "text": "",
-                "span": "2"
+                "span": "1",
+                "className": "px-2",
+                "button": {
+                    "type": "",
+                    "text": "",
+                    "className": "",
+                    "variant": ""
+                }
             }
         ]
     ]

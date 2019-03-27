@@ -7,7 +7,7 @@ let salt = bcrypt.genSaltSync(10);
 // handle login route
 router.post("/login", (req, res) => {
     // check DB to see if user exists
-    db.Client.findOne({ email: req.body.email}).then(user => {
+    db.Client.findOne({ email: req.body.email }).then(user => {
         if (user) {
             // user is there -go ahead-
             // 1- compare passwords
@@ -35,9 +35,9 @@ router.post("/login", (req, res) => {
                 errorMsg: "The email you entered couldn't be found."
             });
         }
-    }).catch(err=>{
+    }).catch(err => {
         console.log(err)
-        res.json({errorMsg: "Something went wrong"})
+        res.json({ errorMsg: "Something went wrong" })
     });
 });
 // Handle sign up 

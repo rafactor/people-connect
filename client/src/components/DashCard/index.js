@@ -22,6 +22,7 @@ function DashCard(props) {
                                 href={btn.href}
                                 active={btn.active}
                                 onClick={btn.onClick}
+                                title={btn.title}
                                 icon={btn.icon}
                                 text={btn.text}
                             >
@@ -37,6 +38,7 @@ function DashCard(props) {
                                 href={btn.href}
                                 active={btn.active}
                                 onClick={btn.onClick}
+                                title={btn.title}
                                 icon={btn.icon}
                                 text={btn.text}
                             >

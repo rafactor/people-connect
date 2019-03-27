@@ -1,0 +1,104 @@
+{
+    "myservices": [
+        {
+            "icon": "fas fa-hashtag",
+            "text": ""
+        },
+        {
+            "icon": "fas fa-language",
+            "text": "Language"
+        },
+        {
+            "icon": "fas fa-user",
+            "text": "Name"
+        },
+        {
+            "icon": "fas fa-envelope",
+            "text": "Email"
+        },
+        {
+            "icon": "fas fa-phone",
+            "text": "Phone"
+        },
+        {
+            "icon": "fas fa-map-marked-alt",
+            "text": "Country"
+        },
+        {
+            "icon": "fas fa-map-marker-alt",
+            "text": "City"
+        },
+        {
+            "icon": "fas fa-info-circle",
+            "text": "More"
+        }
+    ],
+    "market": [
+        {
+            "icon": "fas fa-hashtag",
+            "text": ""
+        },
+        {
+            "icon": "fas fa-language",
+            "text": "Language"
+        },
+        {
+            "icon": "fas fa-user",
+            "text": "Name"
+        },
+        {
+            "icon": "fas fa-envelope",
+            "text": "Email"
+        },
+        {
+            "icon": "fas fa-phone",
+            "text": "Phone"
+        },
+        {
+            "icon": "fas fa-map-marked-alt",
+            "text": "Country"
+        },
+        {
+            "icon": "fas fa-map-marker-alt",
+            "text": "City"
+        },
+        {
+            "icon": "fas fa-info-circle",
+            "text": "More"
+        }
+    ],
+    "myorders": [
+        {
+            "icon": "fas fa-hashtag",
+            "text": ""
+        },
+        {
+            "icon": "fas fa-language",
+            "text": "Language"
+        },
+        {
+            "icon": "fas fa-user",
+            "text": "Name"
+        },
+        {
+            "icon": "fas fa-envelope",
+            "text": "Email"
+        },
+        {
+            "icon": "fas fa-phone",
+            "text": "Phone"
+        },
+        {
+            "icon": "fas fa-map-marked-alt",
+            "text": "Country"
+        },
+        {
+            "icon": "fas fa-map-marker-alt",
+            "text": "City"
+        },
+        {
+            "icon": "fas fa-info-circle",
+            "text": "More"
+        }
+    ],
+}

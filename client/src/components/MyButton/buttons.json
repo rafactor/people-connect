@@ -64,6 +64,11 @@
         "text": "Buy",
         "variant": "outline-dark"
     },
+    "error": {
+        "icon": "fas fa-exclamation-triangle",
+        "text": "Error",
+        "variant": "outline-danger"
+    },
     "market": {
         "icon": "fas fa-store",
         "text": "Sell",

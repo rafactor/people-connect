@@ -4,9 +4,10 @@ import DashCard from "../../components/DashCard";
 import MyButton from "../../components/MyButton";
 import Logo from "../../components/Logo";
 import InputField from "../../components/InputField";
+import FormError from "../../components/FormError";
 
 
-function renderContent(method, changeMethod) {
+function renderContent({ method, changeMethod, authUser, onChange, input }) {
     switch (method) {
         case "login":
             return (
@@ -17,15 +18,15 @@ function renderContent(method, changeMethod) {
                         </Col>
                     </Row>
 
-                    <InputField variant="email" />
-                    <InputField variant="password" />
+                    <InputField type="email" onChange={onChange} value={input} />
+                    <InputField type="password" onChange={onChange} value={input} />
 
                     <Row className="my-5">
                         <Col sm={6} className="text-right py-0 px-1">
                             <MyButton type="return" variant="outline-dark" className="px-3" onClick={() => { changeMethod("") }} />
                         </Col>
-                        <Col sm={6} className="text-left py-0 px-1" className="px-3" onClick={() => { }} >
-                            <MyButton type="login" />
+                        <Col sm={6} className="text-left py-0 px-1" className="px-3"  >
+                            <MyButton type="login" onClick={() => { authUser(true) }} />
                         </Col>
                     </Row>
                 </>
@@ -39,19 +40,22 @@ function renderContent(method, changeMethod) {
                         </Col>
                     </Row>
 
-                    <InputField variant="name" />
-                    <InputField variant="email" />
-                    <InputField variant="phone" />
-                    <InputField variant="language" />
-                    <InputField variant="password" />
-                    <InputField variant="location" />
+                    <InputField type="name" onChange={onChange} value={input} />
+                    <InputField type="email" onChange={onChange} value={input} />
+                    <InputField type="phone" onChange={onChange} value={input} />
+                    <InputField type="language" onChange={onChange} value={input} />
+                    <InputField type="password" onChange={onChange} value={input} />
+                    <InputField type="location" onChange={onChange} value={input} />
 
                     <Row className="my-5">
-                        <Col sm={12} className="text-right py-0 px-1">
-                            <MyButton type="return" className="mx-2" onClick={() => { changeMethod("") }} />
-                            <MyButton type="register" className="mx-2" onClick={() => { }} />
+                        <Col sm={6} className="text-right py-0 px-1">
+                            <MyButton type="return" variant="outline-dark" onClick={() => { changeMethod(""); }} />
+                        </Col>
+                        <Col sm={6} className="text-left py-0 px-1">
+                            <MyButton type="register" variant="info" text="Register" onClick={() => { }} />
                         </Col>
                     </Row>
+
                 </>
             )
         case "google":
@@ -63,7 +67,7 @@ function renderContent(method, changeMethod) {
                         </Col>
                     </Row>
 
-                    <InputField variant="email" />
+                    <InputField type="email" onChange={onChange} value={input} />
 
                     <Row className="my-5">
                         <Col sm={6} className="text-right py-0 px-1">
@@ -84,7 +88,7 @@ function renderContent(method, changeMethod) {
                         </Col>
                     </Row>
 
-                    <InputField variant="email" />
+                    <InputField type="email" onChange={onChange} value={input} />
 
                     <Row className="my-5">
                         <Col sm={6} className="text-right py-0 px-1">
@@ -100,20 +104,20 @@ function renderContent(method, changeMethod) {
             return (
                 <>
                     <Row className="my-3">
-                        <Col sm={6} className="text-right py-0 px-3">
-                            <MyButton type="login" className="px-5" onClick={() => { changeMethod("login") }} />
+                        <Col xs={6} sm={6} className=" text-right py-0 px-3">
+                            <MyButton type="login" onClick={() => { changeMethod("login") }} />
                         </Col>
-                        <Col sm={6} className="text-left py-0 px-3">
-                            <MyButton type="register" className="px-5" onClick={() => { changeMethod("register") }} />
+                        <Col xs={6} sm={6} className="text-left py-0 px-3">
+                            <MyButton type="register" onClick={() => { changeMethod("register") }} />
                         </Col>
                     </Row>
 
                     <Row className="my-3">
-                        <Col sm={6} className="text-right py-0 px-3">
-                            <MyButton variant="outline-success" type="google" className="px-5" onClick={() => { changeMethod("google") }} />
+                        <Col xs={6} sm={6} className="text-right py-0 px-3">
+                            <MyButton variant="outline-success" type="google" onClick={() => { changeMethod("google") }} />
                         </Col>
-                        <Col sm={6} className="text-left py-0 px-3">
-                            <MyButton variant="outline-primary" type="facebook" className="px-5" onClick={() => { changeMethod("facebook") }} />
+                        <Col xs={6} sm={6} className="text-left py-0 px-3">
+                            <MyButton variant="outline-primary" type="facebook" onClick={() => { changeMethod("facebook") }} />
                         </Col>
                     </Row>
                 </>
@@ -126,15 +130,15 @@ function Login(props) {
 
         <DashCard
             header={{
-                left: [{}],
+                left: [{ type: "login", variant: "outline-info", text: "Login" }],
                 right: [{}]
             }}
             footer={<></>}
         >
 
             <Logo />
-            {renderContent(props.method, props.changeMethod)}
-
+            {renderContent(props)}
+            <FormError text={props.error} />
 
         </DashCard >
     );

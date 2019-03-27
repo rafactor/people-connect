@@ -1,4 +1,21 @@
 {
+    "date": {
+        "prepend": {
+            "variant": "info",
+            "icon": "fas fa-calendar-times"
+        },
+        "main": [
+            [
+                {
+                    "as": "input",
+                    "type": "date",
+                    "name": "date",
+                    "placeholder": "Date"
+                }
+            ]
+        ],
+        "append": {}
+    },
     "name": {
         "prepend": {
             "variant": "secondary",
@@ -11,6 +28,33 @@
                     "type": "text",
                     "name": "name",
                     "placeholder": "Name"
+                }
+            ]
+        ],
+        "append": {}
+    },
+    "appLanguages": {
+        "prepend": {
+            "variant": "dark",
+            "icon": "fas fa-language"
+        },
+        "main": [
+            [
+                {
+                    "text": "Arabic (عربي)",
+                    "value": "ar"
+                },
+                {
+                    "text": "English",
+                    "value": "en"
+                },
+                {
+                    "text": "Ukrainian (Ukraine)",
+                    "value": "ua"
+                },
+                {
+                    "text": "Portuguese",
+                    "value": "pt"
                 }
             ]
         ],
@@ -30,20 +74,292 @@
                     "placeholder": "Select Language",
                     "options": [
                         {
-                            "text": "Arabic (عربي)",
-                            "value": "ar"
+                            "value": "AF",
+                            "text": "Afrikanns"
                         },
                         {
-                            "text": "English",
-                            "value": "en"
+                            "value": "SQ",
+                            "text": "Albanian"
                         },
                         {
-                            "text": "Ukrainian (Ukraine)",
-                            "value": "ua"
+                            "value": "AR",
+                            "text": "Arabic"
                         },
                         {
-                            "text": "Portuguese",
-                            "value": "pt"
+                            "value": "HY",
+                            "text": "Armenian"
+                        },
+                        {
+                            "value": "EU",
+                            "text": "Basque"
+                        },
+                        {
+                            "value": "BN",
+                            "text": "Bengali"
+                        },
+                        {
+                            "value": "BG",
+                            "text": "Bulgarian"
+                        },
+                        {
+                            "value": "CA",
+                            "text": "Catalan"
+                        },
+                        {
+                            "value": "KM",
+                            "text": "Cambodian"
+                        },
+                        {
+                            "value": "ZH",
+                            "text": "Chinese (Mandarin)"
+                        },
+                        {
+                            "value": "HR",
+                            "text": "Croation"
+                        },
+                        {
+                            "value": "CS",
+                            "text": "Czech"
+                        },
+                        {
+                            "value": "DA",
+                            "text": "Danish"
+                        },
+                        {
+                            "value": "NL",
+                            "text": "Dutch"
+                        },
+                        {
+                            "value": "EN",
+                            "text": "English"
+                        },
+                        {
+                            "value": "ET",
+                            "text": "Estonian"
+                        },
+                        {
+                            "value": "FJ",
+                            "text": "Fiji"
+                        },
+                        {
+                            "value": "FI",
+                            "text": "Finnish"
+                        },
+                        {
+                            "value": "FR",
+                            "text": "French"
+                        },
+                        {
+                            "value": "KA",
+                            "text": "Georgian"
+                        },
+                        {
+                            "value": "DE",
+                            "text": "German"
+                        },
+                        {
+                            "value": "EL",
+                            "text": "Greek"
+                        },
+                        {
+                            "value": "GU",
+                            "text": "Gujarati"
+                        },
+                        {
+                            "value": "HE",
+                            "text": "Hebrew"
+                        },
+                        {
+                            "value": "HI",
+                            "text": "Hindi"
+                        },
+                        {
+                            "value": "HU",
+                            "text": "Hungarian"
+                        },
+                        {
+                            "value": "IS",
+                            "text": "Icelandic"
+                        },
+                        {
+                            "value": "ID",
+                            "text": "Indonesian"
+                        },
+                        {
+                            "value": "GA",
+                            "text": "Irish"
+                        },
+                        {
+                            "value": "IT",
+                            "text": "Italian"
+                        },
+                        {
+                            "value": "JA",
+                            "text": "Japanese"
+                        },
+                        {
+                            "value": "JW",
+                            "text": "Javanese"
+                        },
+                        {
+                            "value": "KO",
+                            "text": "Korean"
+                        },
+                        {
+                            "value": "LA",
+                            "text": "Latin"
+                        },
+                        {
+                            "value": "LV",
+                            "text": "Latvian"
+                        },
+                        {
+                            "value": "LT",
+                            "text": "Lithuanian"
+                        },
+                        {
+                            "value": "MK",
+                            "text": "Macedonian"
+                        },
+                        {
+                            "value": "MS",
+                            "text": "Malay"
+                        },
+                        {
+                            "value": "ML",
+                            "text": "Malayalam"
+                        },
+                        {
+                            "value": "MT",
+                            "text": "Maltese"
+                        },
+                        {
+                            "value": "MI",
+                            "text": "Maori"
+                        },
+                        {
+                            "value": "MR",
+                            "text": "Marathi"
+                        },
+                        {
+                            "value": "MN",
+                            "text": "Mongolian"
+                        },
+                        {
+                            "value": "NE",
+                            "text": "Nepali"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "Norwegian"
+                        },
+                        {
+                            "value": "FA",
+                            "text": "Persian"
+                        },
+                        {
+                            "value": "PL",
+                            "text": "Polish"
+                        },
+                        {
+                            "value": "PT",
+                            "text": "Portuguese"
+                        },
+                        {
+                            "value": "PA",
+                            "text": "Punjabi"
+                        },
+                        {
+                            "value": "QU",
+                            "text": "Quechua"
+                        },
+                        {
+                            "value": "RO",
+                            "text": "Romanian"
+                        },
+                        {
+                            "value": "RU",
+                            "text": "Russian"
+                        },
+                        {
+                            "value": "SM",
+                            "text": "Samoan"
+                        },
+                        {
+                            "value": "SR",
+                            "text": "Serbian"
+                        },
+                        {
+                            "value": "SK",
+                            "text": "Slovak"
+                        },
+                        {
+                            "value": "SL",
+                            "text": "Slovenian"
+                        },
+                        {
+                            "value": "ES",
+                            "text": "Spanish"
+                        },
+                        {
+                            "value": "SW",
+                            "text": "Swahili"
+                        },
+                        {
+                            "value": "SV",
+                            "text": "Swedish "
+                        },
+                        {
+                            "value": "TA",
+                            "text": "Tamil"
+                        },
+                        {
+                            "value": "TT",
+                            "text": "Tatar"
+                        },
+                        {
+                            "value": "TE",
+                            "text": "Telugu"
+                        },
+                        {
+                            "value": "TH",
+                            "text": "Thai"
+                        },
+                        {
+                            "value": "BO",
+                            "text": "Tibetan"
+                        },
+                        {
+                            "value": "TO",
+                            "text": "Tonga"
+                        },
+                        {
+                            "value": "TR",
+                            "text": "Turkish"
+                        },
+                        {
+                            "value": "UK",
+                            "text": "Ukranian"
+                        },
+                        {
+                            "value": "UR",
+                            "text": "Urdu"
+                        },
+                        {
+                            "value": "UZ",
+                            "text": "Uzbek"
+                        },
+                        {
+                            "value": "VI",
+                            "text": "Vietnamese"
+                        },
+                        {
+                            "value": "CY",
+                            "text": "Welsh"
+                        },
+                        {
+                            "value": "XH",
+                            "text": "Xhosa"
                         }
                     ]
                 }
@@ -51,18 +367,52 @@
         ],
         "append": {}
     },
-    "role": {
+    "category": {
         "prepend": {
-            "variant": "warning",
-            "icon": "fas fa-users"
+            "variant": "dark",
+            "icon": "fas fa-th-large"
         },
         "main": [
             [
                 {
                     "as": "select",
                     "type": "text",
-                    "name": "role",
-                    "placeholder": "Select a Role"
+                    "name": "category",
+                    "placeholder": "Select a Category"
+                }
+            ]
+        ],
+        "append": {}
+    },
+    "subcategory": {
+        "prepend": {
+            "variant": "dark",
+            "icon": "fas fa-th"
+        },
+        "main": [
+            [
+                {
+                    "as": "select",
+                    "type": "text",
+                    "name": "subcategory",
+                    "placeholder": "Select Sub-Category"
+                }
+            ]
+        ],
+        "append": {}
+    },
+    "coverage": {
+        "prepend": {
+            "variant": "dark",
+            "icon": "fas fa-map"
+        },
+        "main": [
+            [
+                {
+                    "as": "select",
+                    "type": "text",
+                    "name": "coverage",
+                    "placeholder": "Select Area"
                 }
             ]
         ],

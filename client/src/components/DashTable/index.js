@@ -1,5 +1,15 @@
 import React from "react";
 import { Table } from 'react-bootstrap';
+import MyButton from '../MyButton';
+
+function render_tdata(text, btn) {
+    if (btn) {
+        return (<MyButton type={btn.type} className={btn.className} variant={btn.variant} text={btn.text} />
+
+        )
+    }
+    return (text)
+}
 
 function DashTable(props) {
     return (
@@ -20,9 +30,9 @@ function DashTable(props) {
                     <tr>
                         {row.map(tdata => (
                             <td
-                                className="text-center align-middle noselect"
+                                className={`text-center align-middle noselect ${tdata.className || ""}`}
                                 colSpan={tdata.span || "1"}
-                            >{tdata.text}</td>
+                            >{render_tdata(tdata.text, tdata.button)}</td>
                         ))}
                     </tr>
                 ))}

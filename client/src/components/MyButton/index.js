@@ -21,6 +21,7 @@ function Register(props) {
             variant={props.variant || selectedBtn.variant}
             onClick={props.onClick}
             active={props.active || false}
+            title={props.title || ""}
         >
             <i className={props.icon || selectedBtn.icon}></i> {props.text || selectedBtn.text}
         </Button>
