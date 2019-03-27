@@ -10,10 +10,26 @@ function NewService() {
   const { t, i18n } = useTranslation();
   const categories = [
     { value:"", option: "select a category", disable: true},
-    { value: "value 1", option: "category1"},
-    { value: "value 2", option: "category2"},
-    { value: "value 3", option: "category3"}
-    ]
+    { value: "Lawyer", option: "Lawyer"},
+    { value: "House Keeper", option: "House Keeper"},
+    { value: "Baby Sitter", option: "Baby Sitter"},
+    { value: "Doctor", option: "Doctor"},
+    { value: "Contractor", option: "Contractor"},
+    { value: "Plumber", option: "Plumber"},
+    { value: "Electrician", option: "Electrician"}
+  ]
+
+  const coverage = [
+    { value: "Oakville", option: "Oakville"},
+    { value: "Toronto", option: "Toronto"},
+    { value: "Mississauga", option: "Mississauga"},
+    { value: "Brampton", option: "Brampton"},
+    { value: "Markham", option: "Markham"},
+    { value: "Etobicoke", option: "Etobicoke"},
+    { value: "Vaughan", option: "Vaughan"},
+    { value: "Burlington", option: "Burlington"},
+    { value: "Milton", option: "Milton"},
+  ]
 
     return (
       <Container>
@@ -27,26 +43,26 @@ function NewService() {
                                 options={categories}
                                 />
 
-                  <Select label="Subcategory" 
+                  {/* <Select label="Subcategory" 
                                 id="register-subcategory-select"
                                 additionalClasses="anotherclass"
                                 options={categories}
-                                />   
+                                />    */}
 
                   <Select label="Coverage" 
                             id="register-coverage-input"
                             additionalClasses="anotherclass"
-                            options={categories}
+                            options={coverage}
                             />
 
-                  <TextInput label="Age" 
+                  <TextInput label="Date of Birth (MM-DD-YYYY)" 
                             id="register-age-input"
                             type="text"
                             placeholder=""
                             additionalClasses="anotherclass"
                             />
 
-                  <TextArea label="Notes" 
+                  <TextArea label="Decription" 
                             id="register-notes-input"
                             type="text"
                             placeholder=""

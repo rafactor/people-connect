@@ -40,7 +40,7 @@ export function Col({ size, children }) {
   
     return (
       <div>  
-        <label className="form-label col-form-label-lg" 
+        <label className="form-label col-form-label" 
                htmlFor={props.id}>{t(props.label)}</label>
         <input className={`form-control ${props.additionalClasses}`} 
                placeholder={`${t(props.placeholder)}`}
@@ -54,7 +54,7 @@ export function Col({ size, children }) {
     
       return (
         <div>  
-          <label className="form-label col-form-label-lg" 
+          <label className="form-label col-form-label" 
                  htmlFor={props.id}>{t(props.label)}</label>
           <textarea row="3" className={`form-control ${props.additionalClasses}`} 
                  placeholder={`${t(props.placeholder)}`}
@@ -98,7 +98,7 @@ export function Col({ size, children }) {
     return(
       <div className="form-group">
         <label htmlFor={props.id} 
-               className="form-check-label col-form-label-lg" >
+               className="form-check-label col-form-label" >
                {t(props.label)}
         </label>
         <select className={`form-control ${props.additionalClasses}`} {...props}>
@@ -120,12 +120,10 @@ export function Col({ size, children }) {
     return(
       <div>
         <label htmlFor={props.id} 
-               className="form-check-label col-form-label-lg" >
+               className="form-check-label col-form-label" >
                {t(props.label)}
         </label>
-        <div className="" id="selected-languages">
-        Display the array of selected languages
-        </div>
+  
      
       <div className="input-group">
 
