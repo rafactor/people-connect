@@ -10,7 +10,7 @@
                     "as": "input",
                     "type": "date",
                     "name": "date",
-                    "placeholder": "Date"
+                    "placeholder": "date"
                 }
             ]
         ],
@@ -27,34 +27,58 @@
                     "as": "input",
                     "type": "text",
                     "name": "name",
-                    "placeholder": "Name"
+                    "placeholder": "name"
                 }
             ]
         ],
         "append": {}
     },
-    "appLanguages": {
+    "title": {
         "prepend": {
             "variant": "dark",
+            "icon": "fas fa-tag"
+        },
+        "main": [
+            [
+                {
+                    "as": "input",
+                    "type": "text",
+                    "name": "title",
+                    "placeholder": "title"
+                }
+            ]
+        ],
+        "append": {}
+    },
+    "appLanguage": {
+        "prepend": {
+            "variant": "secondary",
             "icon": "fas fa-language"
         },
         "main": [
             [
                 {
-                    "text": "Arabic (عربي)",
-                    "value": "ar"
-                },
-                {
-                    "text": "English",
-                    "value": "en"
-                },
-                {
-                    "text": "Ukrainian (Ukraine)",
-                    "value": "ua"
-                },
-                {
-                    "text": "Portuguese",
-                    "value": "pt"
+                    "as": "select",
+                    "type": "text",
+                    "name": "applanguage",
+                    "options": [
+                        {
+                            "text": "Arabic (عربي)",
+                            "value": "ar"
+                        },
+                        {
+                            "text": "English",
+                            "value": "en"
+                        },
+                        {
+                            "text": "Ukrainian",
+                            "value": "ua"
+                        },
+                        {
+                            "text": "Portuguese",
+                            "value": "pt"
+                        }
+                    ]
                 }
             ]
         ],
@@ -62,7 +86,7 @@
     },
     "language": {
         "prepend": {
-            "variant": "dark",
+            "variant": "secondary",
             "icon": "fas fa-language"
         },
         "main": [
@@ -71,294 +95,294 @@
                     "as": "select",
                     "type": "text",
                     "name": "language",
-                    "placeholder": "Select Language",
+                    "placeholder": "language",
                     "options": [
                         {
-                            "value": "AF",
+                            "value": "Afrikanns",
                             "text": "Afrikanns"
                         },
                         {
-                            "value": "SQ",
+                            "value": "Albanian",
                             "text": "Albanian"
                         },
                         {
-                            "value": "AR",
+                            "value": "Arabic",
                             "text": "Arabic"
                         },
                         {
-                            "value": "HY",
+                            "value": "Armenian",
                             "text": "Armenian"
                         },
                         {
-                            "value": "EU",
+                            "value": "Basque",
                             "text": "Basque"
                         },
                         {
-                            "value": "BN",
+                            "value": "Bengali",
                             "text": "Bengali"
                         },
                         {
-                            "value": "BG",
+                            "value": "Bulgarian",
                             "text": "Bulgarian"
                         },
                         {
-                            "value": "CA",
+                            "value": "Catalan",
                             "text": "Catalan"
                         },
                         {
-                            "value": "KM",
+                            "value": "Cambodian",
                             "text": "Cambodian"
                         },
                         {
-                            "value": "ZH",
+                            "value": "Chinese (Mandarin)",
                             "text": "Chinese (Mandarin)"
                         },
                         {
-                            "value": "HR",
+                            "value": "Croation",
                             "text": "Croation"
                         },
                         {
-                            "value": "CS",
+                            "value": "Czech",
                             "text": "Czech"
                         },
                         {
-                            "value": "DA",
+                            "value": "Danish",
                             "text": "Danish"
                         },
                         {
-                            "value": "NL",
+                            "value": "Dutch",
                             "text": "Dutch"
                         },
                         {
-                            "value": "EN",
+                            "value": "English",
                             "text": "English"
                         },
                         {
-                            "value": "ET",
+                            "value": "Estonian",
                             "text": "Estonian"
                         },
                         {
-                            "value": "FJ",
+                            "value": "Fiji",
                             "text": "Fiji"
                         },
                         {
-                            "value": "FI",
+                            "value": "Finnish",
                             "text": "Finnish"
                         },
                         {
-                            "value": "FR",
+                            "value": "French",
                             "text": "French"
                         },
                         {
-                            "value": "KA",
+                            "value": "Georgian",
                             "text": "Georgian"
                         },
                         {
-                            "value": "DE",
+                            "value": "German",
                             "text": "German"
                         },
                         {
-                            "value": "EL",
+                            "value": "Greek",
                             "text": "Greek"
                         },
                         {
-                            "value": "GU",
+                            "value": "Gujarati",
                             "text": "Gujarati"
                         },
                         {
-                            "value": "HE",
+                            "value": "Hebrew",
                             "text": "Hebrew"
                         },
                         {
-                            "value": "HI",
+                            "value": "Hindi",
                             "text": "Hindi"
                         },
                         {
-                            "value": "HU",
+                            "value": "Hungarian",
                             "text": "Hungarian"
                         },
                         {
-                            "value": "IS",
+                            "value": "Icelandic",
                             "text": "Icelandic"
                         },
                         {
-                            "value": "ID",
+                            "value": "Indonesian",
                             "text": "Indonesian"
                         },
                         {
-                            "value": "GA",
+                            "value": "Irish",
                             "text": "Irish"
                         },
                         {
-                            "value": "IT",
+                            "value": "Italian",
                             "text": "Italian"
                         },
                         {
-                            "value": "JA",
+                            "value": "Japanese",
                             "text": "Japanese"
                         },
                         {
-                            "value": "JW",
+                            "value": "Javanese",
                             "text": "Javanese"
                         },
                         {
-                            "value": "KO",
+                            "value": "Korean",
                             "text": "Korean"
                         },
                         {
-                            "value": "LA",
+                            "value": "Latin",
                             "text": "Latin"
                         },
                         {
-                            "value": "LV",
+                            "value": "Latvian",
                             "text": "Latvian"
                         },
                         {
-                            "value": "LT",
+                            "value": "Lithuanian",
                             "text": "Lithuanian"
                         },
                         {
-                            "value": "MK",
+                            "value": "Macedonian",
                             "text": "Macedonian"
                         },
                         {
-                            "value": "MS",
+                            "value": "Malay",
                             "text": "Malay"
                         },
                         {
-                            "value": "ML",
+                            "value": "Malayalam",
                             "text": "Malayalam"
                         },
                         {
-                            "value": "MT",
+                            "value": "Maltese",
                             "text": "Maltese"
                         },
                         {
-                            "value": "MI",
+                            "value": "Maori",
                             "text": "Maori"
                         },
                         {
-                            "value": "MR",
+                            "value": "Marathi",
                             "text": "Marathi"
                         },
                         {
-                            "value": "MN",
+                            "value": "Mongolian",
                             "text": "Mongolian"
                         },
                         {
-                            "value": "NE",
+                            "value": "Nepali",
                             "text": "Nepali"
                         },
                         {
-                            "value": "NO",
+                            "value": "Norwegian",
                             "text": "Norwegian"
                         },
                         {
-                            "value": "FA",
+                            "value": "Persian",
                             "text": "Persian"
                         },
                         {
-                            "value": "PL",
+                            "value": "Polish",
                             "text": "Polish"
                         },
                         {
-                            "value": "PT",
+                            "value": "Portuguese",
                             "text": "Portuguese"
                         },
                         {
-                            "value": "PA",
+                            "value": "Punjabi",
                             "text": "Punjabi"
                         },
                         {
-                            "value": "QU",
+                            "value": "Quechua",
                             "text": "Quechua"
                         },
                         {
-                            "value": "RO",
+                            "value": "Romanian",
                             "text": "Romanian"
                         },
                         {
-                            "value": "RU",
+                            "value": "Russian",
                             "text": "Russian"
                         },
                         {
-                            "value": "SM",
+                            "value": "Samoan",
                             "text": "Samoan"
                         },
                         {
-                            "value": "SR",
+                            "value": "Serbian",
                             "text": "Serbian"
                         },
                         {
-                            "value": "SK",
+                            "value": "Slovak",
                             "text": "Slovak"
                         },
                         {
-                            "value": "SL",
+                            "value": "Slovenian",
                             "text": "Slovenian"
                         },
                         {
-                            "value": "ES",
+                            "value": "Spanish",
                             "text": "Spanish"
                         },
                         {
-                            "value": "SW",
+                            "value": "Swahili",
                             "text": "Swahili"
                         },
                         {
-                            "value": "SV",
+                            "value": "Swedish ",
                             "text": "Swedish "
                         },
                         {
-                            "value": "TA",
+                            "value": "Tamil",
                             "text": "Tamil"
                         },
                         {
-                            "value": "TT",
+                            "value": "Tatar",
                             "text": "Tatar"
                         },
                         {
-                            "value": "TE",
+                            "value": "Telugu",
                             "text": "Telugu"
                         },
                         {
-                            "value": "TH",
+                            "value": "Thai",
                             "text": "Thai"
                         },
                         {
-                            "value": "BO",
+                            "value": "Tibetan",
                             "text": "Tibetan"
                         },
                         {
-                            "value": "TO",
+                            "value": "Tonga",
                             "text": "Tonga"
                         },
                         {
-                            "value": "TR",
+                            "value": "Turkish",
                             "text": "Turkish"
                         },
                         {
-                            "value": "UK",
+                            "value": "Ukranian",
                             "text": "Ukranian"
                         },
                         {
-                            "value": "UR",
+                            "value": "Urdu",
                             "text": "Urdu"
                         },
                         {
-                            "value": "UZ",
+                            "value": "Uzbek",
                             "text": "Uzbek"
                         },
                         {
-                            "value": "VI",
+                            "value": "Vietnamese",
                             "text": "Vietnamese"
                         },
                         {
-                            "value": "CY",
+                            "value": "Welsh",
                             "text": "Welsh"
                         },
                         {
-                            "value": "XH",
+                            "value": "Xhosa",
                             "text": "Xhosa"
                         }
                     ]
@@ -369,7 +393,7 @@
     },
     "category": {
         "prepend": {
-            "variant": "dark",
+            "variant": "secondary",
             "icon": "fas fa-th-large"
         },
         "main": [
@@ -378,7 +402,37 @@
                     "as": "select",
                     "type": "text",
                     "name": "category",
-                    "placeholder": "Select a Category"
+                    "placeholder": "category",
+                    "options": [
+                        {
+                            "text": "Riding & Commute",
+                            "value": "Transportation"
+                        },
+                        {
+                            "text": "Delivery",
+                            "value": "Delivery"
+                        },
+                        {
+                            "text": "Tutoring",
+                            "value": "Tutoring"
+                        },
+                        {
+                            "text": "Cleaning",
+                            "value": "Cleaning"
+                        },
+                        {
+                            "text": "Language Support",
+                            "value": "Language Support"
+                        },
+                        {
+                            "text": "Daily Life Guidance",
+                            "value": "Life Guidance"
+                        },
+                        {
+                            "text": "Home Maintenence",
+                            "value": "Home Maintenence"
+                        }
+                    ]
                 }
             ]
         ],
@@ -386,7 +440,7 @@
     },
     "subcategory": {
         "prepend": {
-            "variant": "dark",
+            "variant": "secondary",
             "icon": "fas fa-th"
         },
         "main": [
@@ -395,7 +449,7 @@
                     "as": "select",
                     "type": "text",
                     "name": "subcategory",
-                    "placeholder": "Select Sub-Category"
+                    "placeholder": "subcategory"
                 }
             ]
         ],
@@ -409,10 +463,10 @@
         "main": [
             [
                 {
-                    "as": "select",
+                    "as": "input",
                     "type": "text",
                     "name": "coverage",
-                    "placeholder": "Select Area"
+                    "placeholder": "coverage"
                 }
             ]
         ],
@@ -429,7 +483,7 @@
                     "as": "input",
                     "type": "text",
                     "name": "contact",
-                    "placeholder": "Contact"
+                    "placeholder": "contact"
                 }
             ]
         ],
@@ -437,7 +491,7 @@
     },
     "email": {
         "prepend": {
-            "variant": "dark",
+            "variant": "secondary",
             "icon": "fas fa-envelope"
         },
         "main": [
@@ -446,7 +500,7 @@
                     "as": "input",
                     "type": "email",
                     "name": "email",
-                    "placeholder": "E-mail Address"
+                    "placeholder": "email"
                 }
             ]
         ],
@@ -463,7 +517,24 @@
                     "as": "input",
                     "type": "number",
                     "name": "phone",
-                    "placeholder": "Phone Number"
+                    "placeholder": "phone"
+                }
+            ]
+        ],
+        "append": {}
+    },
+    "price": {
+        "prepend": {
+            "variant": "warning",
+            "icon": "fas fa-dollar-sign"
+        },
+        "main": [
+            [
+                {
+                    "as": "input",
+                    "type": "number",
+                    "name": "price",
+                    "placeholder": "price"
                 }
             ]
         ],
@@ -480,7 +551,7 @@
                     "as": "input",
                     "type": "password",
                     "name": "password",
-                    "placeholder": "Password"
+                    "placeholder": "password"
                 }
             ]
         ],
@@ -497,7 +568,7 @@
                     "as": "input",
                     "type": "text",
                     "name": "address",
-                    "placeholder": "Street Address"
+                    "placeholder": "address"
                 }
             ]
         ],
@@ -505,7 +576,7 @@
     },
     "location": {
         "prepend": {
-            "variant": "dark",
+            "variant": "secondary",
             "icon": "fas fa-map-marked-alt"
         },
         "main": [
@@ -514,27 +585,27 @@
                     "as": "input",
                     "type": "text",
                     "name": "city",
-                    "placeholder": "City"
+                    "placeholder": "city"
                 },
                 {
                     "as": "input",
                     "type": "text",
                     "name": "province",
-                    "placeholder": "Province/State"
+                    "placeholder": "province"
                 }
             ],
             [
                 {
                     "as": "input",
                     "type": "text",
-                    "name": "postal",
-                    "placeholder": "Postal Code"
+                    "name": "postalcode",
+                    "placeholder": "postalcode"
                 },
                 {
                     "as": "select",
                     "type": "text",
                     "name": "country",
-                    "placeholder": "Select Country",
+                    "placeholder": "country",
                     "options": [
                         {
                             "text": "Canada",
@@ -557,7 +628,7 @@
                     "as": "textarea",
                     "type": "text",
                     "name": "description",
-                    "placeholder": "Description",
+                    "placeholder": "description",
                     "class": "mh-2"
                 }
             ]

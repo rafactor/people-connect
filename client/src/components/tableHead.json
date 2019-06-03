@@ -1,0 +1,100 @@
+{
+    "myservices": [
+        {
+            "icon": "fas fa-hashtag",
+            "text": ""
+        },
+        {
+            "icon": "fas fa-language",
+            "text": "Language"
+        },
+        {
+            "icon": "fas fa-th-large",
+            "text": "Category"
+        },
+        {
+            "icon": "fas fa-map",
+            "text": "Coverage"
+        },
+        {
+            "icon": "fas fa-search",
+            "text": "description"
+        },
+        {
+            "icon": "fas fa-calendar-times",
+            "text": "CreatedOn"
+        },
+        {
+            "icon": "fas fa-info-circle",
+            "text": "More"
+        }
+    ],
+    "market": [
+        {
+            "icon": "fas fa-hashtag",
+            "text": ""
+        },
+        {
+            "icon": "fas fa-th-large",
+            "text": "Provider"
+        },
+        {
+            "icon": "fas fa-language",
+            "text": "Language"
+        },
+        {
+            "icon": "fas fa-th-large",
+            "text": "Category"
+        },
+        {
+            "icon": "fas fa-map",
+            "text": "Coverage"
+        },
+        {
+            "icon": "fas fa-search",
+            "text": "Description"
+        },
+        {
+            "icon": "fas fa-calendar-times",
+            "text": "CreatedOn"
+        },
+        {
+            "icon": "fas fa-info-circle",
+            "text": "More"
+        }
+    ],
+    "myorders": [
+        {
+            "icon": "fas fa-hashtag",
+            "text": ""
+        },
+        {
+            "icon": "fas fa-th-large",
+            "text": "Provider"
+        },
+        {
+            "icon": "fas fa-language",
+            "text": "Language"
+        },
+        {
+            "icon": "fas fa-th-large",
+            "text": "Category"
+        },
+        {
+            "icon": "fas fa-map",
+            "text": "Coverage"
+        },
+        {
+            "icon": "fas fa-search",
+            "text": "description"
+        },
+        {
+            "icon": "fas fa-calendar-times",
+            "text": "OrderedOn"
+        },
+        {
+            "icon": "fas fa-info-circle",
+            "text": "More"
+        }
+    ]
+}

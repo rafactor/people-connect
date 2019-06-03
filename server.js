@@ -31,13 +31,14 @@ app.use(
   })
 );
 // Define API routes here
-app.use('/api/auth', require('./routes/auth'))
-app.use('/api/', require('./routes/index'))
+app.use('/auth/', require('./routes/auth'))
+app.use('/api/', require('./routes/api'))
 // Send every other request to the React app
 // Define any API routes before this runs
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
+
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);

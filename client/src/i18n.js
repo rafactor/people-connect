@@ -1,7 +1,7 @@
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
-import Backend from 'i18next-locize-backend';
+// import Backend from 'i18next-locize-backend';
 
 import common_en from "./translations/en/common"
 import common_pt from "./translations/pt/common"
@@ -26,11 +26,9 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-
     resources,
     fallbackLng: "en",
     debug: true,
-
     // have a common namespace used around the full app
     ns: ["common"],
     defaultNS: "common",
@@ -39,7 +37,10 @@ i18n
 
     interpolation: {
       escapeValue: false
-    }
+    },
+    react: {
+      wait: true,
+    },
   });
 
 export default i18n;

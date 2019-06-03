@@ -1,10 +1,6 @@
 import React from "react";
-import { Card, Col, Button, Jumbotron, Container } from 'react-bootstrap';
+import { Card, Col, Jumbotron, Container } from 'react-bootstrap';
 import MyButton from "../MyButton";
-/* 
-To Do:
-function called when plus is pressed
-*/
 
 function DashCard(props) {
     if (!props.header.left) props.header.left = [{}];
@@ -13,37 +9,17 @@ function DashCard(props) {
         <Col xl={12} className="mb-3">
             <Card className="border-dark shadow-lg">
                 <Card.Header className="bg-dark justify-content-center">
-                    {props.header.left.map(btn => {
-                        return (
-                            <MyButton
-                                type={btn.type}
-                                className={`float-left mx-2 ${btn.className}`}
-                                variant={btn.variant}
-                                href={btn.href}
-                                active={btn.active}
-                                onClick={btn.onClick}
-                                title={btn.title}
-                                icon={btn.icon}
-                                text={btn.text}
-                            >
-                            </MyButton>
-                        )
+                    {props.header.left.map((btn, i) => {
+                        btn.className = `float-left mx-2 ${btn.className || " "}`;
+                        btn.key = i;
+                        btn.id = i;
+                        return <MyButton {...btn} />
                     })}
-                    {props.header.right.map(btn => {
-                        return (
-                            <MyButton
-                                type={btn.type}
-                                className={`float-right mx-2 ${btn.className}`}
-                                variant={btn.variant}
-                                href={btn.href}
-                                active={btn.active}
-                                onClick={btn.onClick}
-                                title={btn.title}
-                                icon={btn.icon}
-                                text={btn.text}
-                            >
-                            </MyButton>
-                        )
+                    {props.header.right.map((btn, i) => {
+                        btn.className = `float-right mx-2 ${btn.className || " "}`;
+                        btn.key = i;
+                        btn.id = i;
+                        return <MyButton {...btn} />
                     })}
 
                 </Card.Header>

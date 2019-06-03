@@ -1,0 +1,174 @@
+{
+    "hash": {
+        "icon": "fas fa-hashtag",
+        "text": ""
+    },
+    "refresh": {
+        "icon": "fas fa-redo-alt",
+        "text": ""
+    },
+    "price": {
+        "icon": "fas fa-dollar-sign",
+        "text": "Price"
+    },
+    "provider": {
+        "icon": "fas fa-th-large",
+        "text": "Provider"
+    },
+    "contact": {
+        "icon": "fas fa-user-circle",
+        "text": "Contact"
+    },
+    "description": {
+        "icon": "fas fa-search",
+        "text": "Description"
+    },
+    "category": {
+        "icon": "fas fa-th-large",
+        "text": "Category"
+    },
+    "coverage": {
+        "icon": "fas fa-map",
+        "text": "Coverage"
+    },
+    "ordered_on": {
+        "icon": "fas fa-calendar-times",
+        "text": "OrderedOn"
+    },
+    "created_on": {
+        "icon": "fas fa-calendar-times",
+        "text": "CreatedOn"
+    },
+    "home": {
+        "icon": "fas fa-home",
+        "text": "Dashboard"
+    },
+    "plus": {
+        "icon": "fas fa-plus",
+        "text": ""
+    },
+    "add": {
+        "icon": "fas fa-plus-circle",
+        "text": "Add"
+    },
+    "apply": {
+        "icon": "fas fa-check-double",
+        "text": "Apply"
+    },
+    "cancel": {
+        "icon": "fas fa-times",
+        "text": "Cancel"
+    },
+    "confirm": {
+        "icon": "fas fa-check-double",
+        "text": "Confirm"
+    },
+    "dismiss": {
+        "icon": "fas fa-times",
+        "text": "Dismiss"
+    },
+    "edit": {
+        "icon": "fas fa-edit",
+        "text": "Edit"
+    },
+    "google": {
+        "icon": "fab fa-google-plus-g",
+        "text": "Google"
+    },
+    "facebook": {
+        "icon": "fab fa-facebook-square",
+        "text": "Facebook"
+    },
+    "signup": {
+        "icon": "fas fa-user-plus",
+        "text": "Sign Up"
+    },
+    "signin": {
+        "icon": "fas fa-sign-in-alt",
+        "text": "Sign In"
+    },
+    "signout": {
+        "icon": "fas fa-sign-out-alt",
+        "text": "Sign Out"
+    },
+    "store": {
+        "icon": "fas fa-store-alt",
+        "text": "Sell"
+    },
+    "market": {
+        "icon": "fas fa-store",
+        "text": "Market"
+    },
+    "request": {
+        "icon": "fas fa-clipboard-list",
+        "text": "Request List"
+    },
+    "buy": {
+        "icon": "fas fa-shopping-cart",
+        "text": "Buy"
+    },
+    "order": {
+        "icon": "fas fa-luggage-cart",
+        "text": "Order"
+    },
+    "error": {
+        "icon": "fas fa-exclamation-triangle",
+        "text": "Error"
+    },
+    "title": {
+        "icon": "fas fa-tag",
+        "text": "Title"
+    },
+    "user": {
+        "icon": "far fa-user",
+        "text": "User"
+    },
+    "profile": {
+        "icon": "fas fa-user-edit",
+        "text": "Edit User"
+    },
+    "users": {
+        "icon": "far fa-users",
+        "text": "Users"
+    },
+    "service": {
+        "icon": "fas fa-headset",
+        "text": "Service"
+    },
+    "return": {
+        "icon": "fas fa-arrow-circle-left",
+        "text": "Return"
+    },
+    "language": {
+        "icon": "fas fa-language",
+        "text": "Language"
+    },
+    "name": {
+        "icon": "fas fa-user",
+        "text": "Name"
+    },
+    "email": {
+        "icon": "fas fa-envelope",
+        "text": "Email"
+    },
+    "phone": {
+        "icon": "fas fa-phone",
+        "text": "Phone"
+    },
+    "country": {
+        "icon": "fas fa-map-marked-alt",
+        "text": "Country"
+    },
+    "city": {
+        "icon": "fas fa-map-marker-alt",
+        "text": "City"
+    },
+    "delete": {
+        "icon": "fas fa-trash",
+        "text": ""
+    },
+    "more": {
+        "icon": "fas fa-info-circle",
+        "text": ""
+    }
+}

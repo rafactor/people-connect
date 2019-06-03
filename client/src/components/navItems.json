@@ -1,33 +1,33 @@
 {
     "brand": {
-        "icon": "fas fa-users",
+        "icon": "user",
         "variant": "outline-warning",
         "text": "People Connect"
     },
     "left": [
         {
-            "icon": "fas fa-users",
-            "text": "Users",
-            "href": ""
+            "icon": "market",
+            "text": "Market",
+            "href": "/market"
         },
         {
-            "icon": "fas fa-times",
-            "text": "Delete",
-            "href": ""
+            "icon": "service",
+            "text": "Services",
+            "href": "/services"
         },
         {
-            "icon": "fas fa-building",
+            "icon": "login",
+            "text": "Login",
+            "href": "/login"
+        },
+        {
+            "icon": "company",
             "text": "Company",
-            "href": ""
-        },
-        {
-            "icon": "fas fa-building",
-            "text": "Company",
-            "href": ""
+            "href": "/market"
         },
         [
             {
-                "icon": "fas fa-building",
+                "icon": "company",
                 "text": "Company"
             },
             {
@@ -39,7 +39,7 @@
     ],
     "right": [
         {
-            "icon": "fas fa-building",
+            "icon": "user",
             "text": "Staff",
             "href": "",
             "onClick": "showModal"

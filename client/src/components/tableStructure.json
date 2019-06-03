@@ -1,0 +1,175 @@
+{
+    "/market": [
+        {
+            "key": "Hash",
+            "btn_only": false
+        },
+        {
+            "key": "Title",
+            "btn_only": false
+        },
+        {
+            "key": "Category",
+            "btn_only": false
+        },
+        {
+            "key": "Language",
+            "btn_only": false
+        },
+        {
+            "key": "Description",
+            "btn_only": false
+        },
+        {
+            "key": "Price",
+            "btn_only": false
+        },
+        {
+            "key": "Coverage",
+            "btn_only": false
+        },
+        {
+            "key": "more",
+            "btn_only": true,
+            "buttons": [
+                {
+                    "type": "buy",
+                    "text": " ",
+                    "className": "mx-2",
+                    "variant": "info",
+                    "cmd": "buy"
+                }
+            ]
+        }
+    ],
+    "/myservices": [
+        {
+            "key": "Hash",
+            "btn_only": false
+        },
+        {
+            "key": "Title",
+            "btn_only": false
+        },
+        {
+            "key": "Category",
+            "btn_only": false
+        },
+        {
+            "key": "Language",
+            "btn_only": false
+        },
+        {
+            "key": "Description",
+            "btn_only": false
+        },
+        {
+            "key": "Coverage",
+            "btn_only": false
+        },
+        {
+            "key": "Price",
+            "btn_only": false
+        },
+        {
+            "key": "more",
+            "btn_only": true,
+            "buttons": [
+                {
+                    "type": "edit",
+                    "text": " ",
+                    "className": "mx-2",
+                    "variant": "info",
+                    "cmd": "edit"
+                },
+                {
+                    "type": "delete",
+                    "text": " ",
+                    "className": "mx-2",
+                    "variant": "danger",
+                    "cmd": "delete"
+                }
+            ]
+        }
+    ],
+    "/myorders": [
+        {
+            "key": "Hash",
+            "btn_only": false
+        },
+        {
+            "key": "Title",
+            "btn_only": false
+        },
+        {
+            "key": "Contact",
+            "btn_only": false
+        },
+        {
+            "key": "Category",
+            "btn_only": false
+        },
+        {
+            "key": "Language",
+            "btn_only": false
+        },
+        {
+            "key": "confirm",
+            "text": "Confirmed",
+            "btn_only": false
+        },
+        {
+            "key": "more",
+            "btn_only": true,
+            "buttons": [
+                {
+                    "type": "cancel",
+                    "text": " ",
+                    "className": "mx-2",
+                    "variant": "warning",
+                    "cmd": "cancel"
+                }
+            ]
+        }
+    ],
+    "/orders": [
+        {
+            "key": "Hash",
+            "btn_only": false
+        },
+        {
+            "key": "Title",
+            "btn_only": false
+        },
+        {
+            "key": "Contact",
+            "btn_only": false
+        },
+        {
+            "key": "Category",
+            "btn_only": false
+        },
+        {
+            "key": "Language",
+            "btn_only": false
+        },
+        {
+            "key": "confirm",
+            "text": "Confirmed",
+            "btn_only": false
+        },
+        {
+            "key": "more",
+            "btn_only": true,
+            "buttons": [
+                {
+                    "type": "confirm",
+                    "text": " ",
+                    "className": "mx-2",
+                    "variant": "warning",
+                    "cmd": "confirm"
+                }
+            ]
+        }
+    ]
+}
